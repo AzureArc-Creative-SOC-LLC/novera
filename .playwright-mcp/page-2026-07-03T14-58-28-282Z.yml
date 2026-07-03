@@ -1,0 +1,356 @@
+- generic [active] [ref=f13e1]:
+  - banner [ref=f13e2]:
+    - navigation [ref=f13e4]:
+      - link "Novera" [ref=f13e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=f13e6]:
+        - listitem [ref=f13e7]:
+          - link "Home" [ref=f13e8] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f13e9]:
+          - link "Products" [ref=f13e10] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=f13e11]:
+          - link "About" [ref=f13e12] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f13e13]:
+          - link "Why Us" [ref=f13e14] [cursor=pointer]:
+            - /url: /#why-us
+        - listitem [ref=f13e15]:
+          - link "Testimonials" [ref=f13e16] [cursor=pointer]:
+            - /url: /#testimonials
+        - listitem [ref=f13e17]:
+          - link "Contact" [ref=f13e18] [cursor=pointer]:
+            - /url: /#contact
+      - generic [ref=f13e19]:
+        - link "Sign in" [ref=f13e20] [cursor=pointer]:
+          - /url: /signin
+        - link "Cart, 0 items" [ref=f13e21] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f13e22]
+  - main [ref=f13e26]:
+    - generic [ref=f13e27]:
+      - img "Novera research-grade peptide product" [ref=f13e30]
+      - generic:
+        - generic: "01"
+      - generic [ref=f13e33]: "2026"
+      - generic [ref=f13e34]:
+        - paragraph [ref=f13e35]: Novera Research
+        - heading "Precision in Every Vial." [level=1] [ref=f13e36]:
+          - generic [ref=f13e37]: Precision in
+          - generic [ref=f13e38]: Every
+          - generic [ref=f13e39]: Vial.
+        - link "View Products →" [ref=f13e41] [cursor=pointer]:
+          - /url: "#products"
+          - text: View Products
+          - generic [ref=f13e42]: →
+      - generic [ref=f13e44]:
+        - generic [ref=f13e45]: Batch Nº 01
+        - generic [ref=f13e46]: Where rigorous testing meets reliable supply.
+        - link "Products" [ref=f13e47] [cursor=pointer]:
+          - /url: "#products"
+    - generic [ref=f13e49]:
+      - generic [ref=f13e50]:
+        - generic [ref=f13e51]:
+          - paragraph [ref=f13e53]: Our Range
+          - heading "Formulations engineered for certainty." [level=2] [ref=f13e55]:
+            - text: Formulations engineered
+            - text: for certainty.
+        - paragraph [ref=f13e58]: Four focused lines — each lyophilised, sealed, and documented, so what reaches your bench is exactly what the label states.
+      - generic [ref=f13e59]:
+        - article [ref=f13e60]:
+          - link "Tirzepatide" [ref=f13e61] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=f13e64]
+          - generic [ref=f13e65]:
+            - generic [ref=f13e66]: "01"
+            - generic [ref=f13e67]:
+              - generic [ref=f13e68]:
+                - link "Tirzepatide" [ref=f13e69] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+                - link "View" [ref=f13e70] [cursor=pointer]:
+                  - /url: /products/tirzepatide
+              - generic [ref=f13e71]:
+                - generic [ref=f13e72]: 5 mg
+                - generic [ref=f13e73]: 10 mg
+                - generic [ref=f13e74]: 15 mg
+                - generic [ref=f13e75]: 30 mg
+        - article [ref=f13e76]:
+          - link "Retatrutide" [ref=f13e77] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide" [ref=f13e80]
+          - generic [ref=f13e81]:
+            - generic [ref=f13e82]: "02"
+            - generic [ref=f13e83]:
+              - generic [ref=f13e84]:
+                - link "Retatrutide" [ref=f13e85] [cursor=pointer]:
+                  - /url: /products/retatrutide
+                - link "View" [ref=f13e86] [cursor=pointer]:
+                  - /url: /products/retatrutide
+              - generic [ref=f13e87]:
+                - generic [ref=f13e88]: 10 mg
+                - generic [ref=f13e89]: 20 mg
+                - generic [ref=f13e90]: 40 mg
+        - article [ref=f13e91]:
+          - link "NAD+" [ref=f13e92] [cursor=pointer]:
+            - /url: /products/nad
+            - img "NAD+" [ref=f13e95]
+          - generic [ref=f13e96]:
+            - generic [ref=f13e97]: "03"
+            - generic [ref=f13e98]:
+              - generic [ref=f13e99]:
+                - link "NAD+" [ref=f13e100] [cursor=pointer]:
+                  - /url: /products/nad
+                - link "View" [ref=f13e101] [cursor=pointer]:
+                  - /url: /products/nad
+              - generic [ref=f13e102]:
+                - generic [ref=f13e103]: 500 mg
+                - generic [ref=f13e104]: 1000 mg
+        - article [ref=f13e105]:
+          - link "Glow" [ref=f13e106] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=f13e109]
+          - generic [ref=f13e110]:
+            - generic [ref=f13e111]: "04"
+            - generic [ref=f13e112]:
+              - generic [ref=f13e113]:
+                - link "Glow" [ref=f13e114] [cursor=pointer]:
+                  - /url: /products/glow
+                - link "View" [ref=f13e115] [cursor=pointer]:
+                  - /url: /products/glow
+              - generic [ref=f13e116]:
+                - generic [ref=f13e117]: Daily Sachets
+                - generic [ref=f13e118]: 30-Day Supply
+    - generic [ref=f13e121]:
+      - img "Inside the Novera research facility" [ref=f13e125]
+      - generic [ref=f13e126]:
+        - paragraph [ref=f13e128]: About Novera
+        - 'heading "Built around one principle: purity." [level=2] [ref=f13e130]':
+          - text: Built around one
+          - text: "principle: purity."
+        - paragraph [ref=f13e132]: Novera was founded in Dubai to advance research with formulations that are clean, reliable, and precisely made. We source only from verified partners and test every batch before it ever leaves us.
+        - paragraph [ref=f13e134]: From peptide synthesis to the supplement bench, our standard never changes — controlled processes, transparent documentation, and support that answers in minutes, not days.
+        - generic [ref=f13e136]:
+          - generic [ref=f13e137]:
+            - paragraph [ref=f13e138]: ≥99%
+            - paragraph [ref=f13e139]: Verified purity target
+          - generic [ref=f13e140]:
+            - paragraph [ref=f13e141]: 10k+
+            - paragraph [ref=f13e142]: Orders shipped worldwide
+    - generic [ref=f13e144]:
+      - generic [ref=f13e145]:
+        - paragraph [ref=f13e147]: Why Novera
+        - heading "Trusted where precision matters most." [level=2] [ref=f13e149]:
+          - text: Trusted where
+          - text: precision matters most.
+      - generic [ref=f13e150]:
+        - generic [ref=f13e151]:
+          - img "Purity, verified." [ref=f13e155]
+          - generic [ref=f13e156]:
+            - generic [ref=f13e158]: "01"
+            - heading "Purity, verified." [level=3] [ref=f13e160]
+            - paragraph [ref=f13e162]: Every batch is independently analysed by HPLC and mass spectrometry against a ≥99% purity target. A certificate of analysis ships with each order — no guesswork, ever.
+        - generic [ref=f13e163]:
+          - img "Controlled consistency." [ref=f13e167]
+          - generic [ref=f13e168]:
+            - generic [ref=f13e170]: "02"
+            - heading "Controlled consistency." [level=3] [ref=f13e172]
+            - paragraph [ref=f13e174]: Formulations are produced under ISO-aligned, tightly controlled processes, so concentration and quality stay uniform from the first vial to the thousandth.
+        - generic [ref=f13e175]:
+          - img "Secure, global delivery." [ref=f13e179]
+          - generic [ref=f13e180]:
+            - generic [ref=f13e182]: "03"
+            - heading "Secure, global delivery." [level=3] [ref=f13e184]
+            - paragraph [ref=f13e186]: Temperature-stable, tamper-evident, discreet packaging with tracked worldwide shipping — your order arrives intact, on time, and exactly as specified.
+    - generic [ref=f13e188]:
+      - generic [ref=f13e189]:
+        - generic [ref=f13e190]:
+          - paragraph [ref=f13e192]: Client Reviews
+          - heading "Backed by people who keep coming back." [level=2] [ref=f13e194]:
+            - text: Backed by people
+            - text: who keep coming back.
+        - generic [ref=f13e196]:
+          - generic [ref=f13e197]: "4.9"
+          - generic [ref=f13e198]:
+            - generic "5 out of 5" [ref=f13e199]:
+              - img [ref=f13e200]
+              - img [ref=f13e202]
+              - img [ref=f13e204]
+              - img [ref=f13e206]
+              - img [ref=f13e208]
+            - paragraph [ref=f13e210]: from 2,000+ verified orders
+      - generic [ref=f13e211]:
+        - generic [ref=f13e213]:
+          - generic: ”
+          - generic "5 out of 5" [ref=f13e214]:
+            - img [ref=f13e215]
+            - img [ref=f13e217]
+            - img [ref=f13e219]
+            - img [ref=f13e221]
+            - img [ref=f13e223]
+          - blockquote [ref=f13e226]:
+            - paragraph [ref=f13e227]: I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our experiments depend on — I won't source from anyone else.
+            - generic [ref=f13e228]:
+              - img "Dr. Hana Al-Rashid" [ref=f13e230]
+              - generic [ref=f13e231]:
+                - paragraph [ref=f13e232]: Dr. Hana Al-Rashid
+                - paragraph [ref=f13e233]: Verified Client
+          - generic [ref=f13e234]:
+            - generic [ref=f13e235]:
+              - button "View testimonial 1" [ref=f13e236]
+              - button "View testimonial 2" [ref=f13e238]
+              - button "View testimonial 3" [ref=f13e240]
+              - button "View testimonial 4" [ref=f13e242]
+            - generic [ref=f13e244]: 01 / 04
+        - generic [ref=f13e246]:
+          - button "Dr. Hana Al-Rashid Dr. Hana Al-Rashid Verified Client" [ref=f13e247]:
+            - img "Dr. Hana Al-Rashid" [ref=f13e249]
+            - generic [ref=f13e250]:
+              - paragraph [ref=f13e251]: Dr. Hana Al-Rashid
+              - paragraph [ref=f13e252]: Verified Client
+            - img [ref=f13e253]
+          - button "Marcus Feldmann Marcus Feldmann Verified Buyer" [ref=f13e255]:
+            - img "Marcus Feldmann" [ref=f13e257]
+            - generic [ref=f13e258]:
+              - paragraph [ref=f13e259]: Marcus Feldmann
+              - paragraph [ref=f13e260]: Verified Buyer
+            - img [ref=f13e261]
+          - button "Priya Nair Priya Nair Returning Client" [ref=f13e263]:
+            - img "Priya Nair" [ref=f13e265]
+            - generic [ref=f13e266]:
+              - paragraph [ref=f13e267]: Priya Nair
+              - paragraph [ref=f13e268]: Returning Client
+            - img [ref=f13e269]
+          - button "Sofia Marchetti Sofia Marchetti Wellness Client" [ref=f13e271]:
+            - img "Sofia Marchetti" [ref=f13e273]
+            - generic [ref=f13e274]:
+              - paragraph [ref=f13e275]: Sofia Marchetti
+              - paragraph [ref=f13e276]: Wellness Client
+            - img [ref=f13e277]
+    - generic [ref=f13e281]:
+      - generic [ref=f13e282]:
+        - paragraph [ref=f13e284]: Get in Touch
+        - heading "Let's talk orders& answers." [level=2] [ref=f13e286]:
+          - text: Let's talk
+          - text: orders& answers.
+        - paragraph [ref=f13e288]: WhatsApp is the fastest route — most enquiries are answered within minutes. Prefer email or a call? We're here for that too.
+        - generic [ref=f13e290]:
+          - link "WhatsApp +971 54 000 0000" [ref=f13e291] [cursor=pointer]:
+            - /url: https://wa.me/971540000000
+            - img [ref=f13e293]
+            - generic [ref=f13e295]:
+              - generic [ref=f13e296]: WhatsApp
+              - generic [ref=f13e297]: +971 54 000 0000
+            - img [ref=f13e298]
+          - link "Email hello@novera.studio" [ref=f13e300] [cursor=pointer]:
+            - /url: mailto:hello@novera.studio
+            - img [ref=f13e302]
+            - generic [ref=f13e305]:
+              - generic [ref=f13e306]: Email
+              - generic [ref=f13e307]: hello@novera.studio
+            - img [ref=f13e308]
+          - link "Phone +971 54 000 0000" [ref=f13e310] [cursor=pointer]:
+            - /url: tel:+971540000000
+            - img [ref=f13e312]
+            - generic [ref=f13e314]:
+              - generic [ref=f13e315]: Phone
+              - generic [ref=f13e316]: +971 54 000 0000
+            - img [ref=f13e317]
+        - generic [ref=f13e320]:
+          - generic [ref=f13e321]:
+            - paragraph [ref=f13e322]: Studio
+            - paragraph [ref=f13e323]: Level 12, Innovation One, Business Bay, Dubai, UAE
+          - generic [ref=f13e324]:
+            - paragraph [ref=f13e325]: Hours
+            - paragraph [ref=f13e326]: Sun – Fri · 9:00 – 18:00 GST
+      - generic [ref=f13e329]:
+        - generic [ref=f13e330]: Typically replies within minutes
+        - generic [ref=f13e334]:
+          - generic [ref=f13e335]:
+            - generic [ref=f13e336]: Full name
+            - textbox "Full name" [ref=f13e337]:
+              - /placeholder: Your name
+          - generic [ref=f13e338]:
+            - generic [ref=f13e339]: Email
+            - textbox "Email" [ref=f13e340]:
+              - /placeholder: you@email.com
+        - generic [ref=f13e342]:
+          - generic [ref=f13e343]: Product interest
+          - combobox "Product interest" [ref=f13e344] [cursor=pointer]:
+            - option "General enquiry" [selected]
+            - option "Tirzepatide"
+            - option "Retatrutide"
+            - option "NAD+"
+            - option "Glow"
+        - generic [ref=f13e346]:
+          - generic [ref=f13e347]: Message
+          - textbox "Message" [ref=f13e348]:
+            - /placeholder: Tell us what you need — quantities, strengths, timelines…
+        - button "Send Message" [ref=f13e349]:
+          - text: Send Message
+          - img [ref=f13e350]
+        - paragraph [ref=f13e352]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+  - contentinfo [ref=f13e353]:
+    - generic [ref=f13e354]:
+      - generic [ref=f13e355]:
+        - generic [ref=f13e356]:
+          - paragraph [ref=f13e358]: Novera
+          - paragraph [ref=f13e360]: Research-grade peptides and wellness science — clean, reliable, and precisely made in Dubai.
+          - generic [ref=f13e362]:
+            - paragraph [ref=f13e363]: Newsletter
+            - generic [ref=f13e364]:
+              - textbox "Your email address" [ref=f13e365]
+              - button "Subscribe" [ref=f13e366]
+            - paragraph [ref=f13e367]
+        - generic [ref=f13e369]:
+          - paragraph [ref=f13e370]: Explore
+          - list [ref=f13e371]:
+            - listitem [ref=f13e372]:
+              - link "Home" [ref=f13e373] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f13e374]:
+              - link "Products" [ref=f13e375] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f13e376]:
+              - link "About" [ref=f13e377] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f13e378]:
+              - link "Why Us" [ref=f13e379] [cursor=pointer]:
+                - /url: /#why-us
+            - listitem [ref=f13e380]:
+              - link "Testimonials" [ref=f13e381] [cursor=pointer]:
+                - /url: /#testimonials
+            - listitem [ref=f13e382]:
+              - link "Contact" [ref=f13e383] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f13e385]:
+          - paragraph [ref=f13e386]: Our Range
+          - list [ref=f13e387]:
+            - listitem [ref=f13e388]:
+              - link "Tirzepatide" [ref=f13e389] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f13e390]:
+              - link "Retatrutide" [ref=f13e391] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f13e392]:
+              - link "NAD+" [ref=f13e393] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f13e394]:
+              - link "Glow" [ref=f13e395] [cursor=pointer]:
+                - /url: /#products
+      - generic [ref=f13e396]:
+        - generic [ref=f13e397]:
+          - paragraph [ref=f13e398]: Contact
+          - paragraph [ref=f13e399]:
+            - text: Level 12, Innovation One, Business Bay, Dubai, UAE
+            - link "+971 54 000 0000" [ref=f13e400] [cursor=pointer]:
+              - /url: https://wa.me/971540000000
+            - text: ·
+            - link "hello@novera.studio" [ref=f13e401] [cursor=pointer]:
+              - /url: mailto:hello@novera.studio
+        - generic [ref=f13e402]:
+          - paragraph [ref=f13e403]: © 2026 Novera. All rights reserved.
+          - paragraph [ref=f13e404]: Privacy · Terms · Shipping
+      - paragraph [ref=f13e405]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+  - button "Open Next.js Dev Tools" [ref=f13e411] [cursor=pointer]:
+    - img [ref=f13e412]

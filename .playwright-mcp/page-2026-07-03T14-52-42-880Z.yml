@@ -1,0 +1,57 @@
+- generic [ref=f12e1]:
+  - main [ref=f12e2]:
+    - generic [ref=f12e5]:
+      - link "Novera" [ref=f12e6] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - generic [ref=f12e8]:
+        - paragraph [ref=f12e9]: Account
+        - heading "Create your Novera account." [level=1] [ref=f12e43]:
+          - text: Create your
+          - emphasis [ref=f12e44]: Novera
+          - text: account.
+        - paragraph [ref=f12e11]: Track orders, access COAs, and manage recurring shipments.
+      - generic [ref=f12e12]:
+        - generic [ref=f12e45]:
+          - generic [ref=f12e46]:
+            - textbox "First name" [ref=f12e47]
+            - generic: First name
+          - generic [ref=f12e48]:
+            - textbox "Last name" [ref=f12e49]
+            - generic: Last name
+        - generic [ref=f12e50]:
+          - textbox "Date of birth" [ref=f12e51]
+          - generic: Date of birth
+        - generic [ref=f12e52]:
+          - generic [ref=f12e53]:
+            - textbox "Nationality" [ref=f12e54]
+            - generic: Nationality
+          - generic [ref=f12e55]:
+            - textbox "Country of residence" [ref=f12e56]
+            - generic: Country of residence
+        - generic [ref=f12e13]:
+          - textbox "Email address" [ref=f12e14]
+          - generic: Email address
+        - generic [ref=f12e15]:
+          - textbox "Password" [ref=f12e16]
+          - generic: Password
+          - button "Show password" [ref=f12e17]:
+            - img [ref=f12e18]
+        - generic [ref=f12e57] [cursor=pointer]:
+          - checkbox "I agree to the Terms and Privacy Policy ." [ref=f12e58]
+          - generic [ref=f12e59]:
+            - text: I agree to the
+            - link "Terms" [ref=f12e60]:
+              - /url: "#"
+            - text: and
+            - link "Privacy Policy" [ref=f12e61]:
+              - /url: "#"
+            - text: .
+        - button "Create account" [ref=f12e62]
+      - paragraph [ref=f12e31]:
+        - text: Already have an account?
+        - button "Sign in" [active] [ref=f12e63]
+      - paragraph [ref=f12e33]: For laboratory R&D use only
+  - button "Open Next.js Dev Tools" [ref=f12e39] [cursor=pointer]:
+    - img [ref=f12e40]
+  - alert [ref=f12e64]

@@ -1,0 +1,196 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
+import { NAV_LINKS } from "@/lib/data";
+import { useCart } from "./cart/CartContext";
+
+const CHROMELESS_ROUTES = ["/signin"];
+
+const EASE = [0.16, 1, 0.3, 1] as const;
+
+function CartButton({ onClick }: { onClick?: () => void }) {
+  const { count } = useCart();
+  return (
+    <a
+      href="/cart"
+      onClick={onClick}
+      aria-label={`Cart, ${count} item${count === 1 ? "" : "s"}`}
+      className="relative inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-500 hover:bg-dark/5"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      >
+        <path
+          d="M6 6h15l-1.5 9h-12L5 3H2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="9" cy="20" r="1.4" />
+        <circle cx="18" cy="20" r="1.4" />
+      </svg>
+      {count > 0 && (
+        <span className="absolute -top-0.5 -right-0.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-olive px-1 text-[0.65rem] font-medium text-background">
+          {count}
+        </span>
+      )}
+    </a>
+  );
+}
+
+export default function Navigation() {
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const hidden = CHROMELESS_ROUTES.some((r) => pathname?.startsWith(r));
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Lock body scroll behind the mobile overlay.
+  useEffect(() => {
+    document.documentElement.classList.toggle("lenis-stopped", open);
+    return () => document.documentElement.classList.remove("lenis-stopped");
+  }, [open]);
+
+  if (hidden) return null;
+
+  return (
+    <>
+      <motion.header
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.9, ease: EASE, delay: 0.1 }}
+        className="fixed inset-x-0 top-0 z-50"
+      >
+        <div
+          className={`transition-[background-color,backdrop-filter,border-color,padding] duration-[600ms] ${
+            scrolled
+              ? "bg-background/70 backdrop-blur-xl border-b border-line"
+              : "bg-transparent border-b border-transparent"
+          }`}
+        >
+          <nav className="container-lux flex items-center justify-between gap-8 py-5">
+            {/* Logo */}
+            <a
+              href="/"
+              className="font-sans font-semibold uppercase text-lg md:text-xl tracking-[0.26em] leading-none text-dark"
+            >
+              Novera
+            </a>
+
+            {/* Desktop links */}
+            <ul className="hidden lg:flex items-center gap-10 text-sm text-muted">
+              {NAV_LINKS.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="link-underline hover:text-dark transition-colors duration-500"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Cart + CTA + burger */}
+            <div className="flex items-center gap-2 sm:gap-4">
+              <a
+                href="/signin"
+                className="hidden sm:inline-flex link-underline text-sm text-muted hover:text-dark transition-colors duration-500"
+              >
+                Sign in
+              </a>
+              <CartButton />
+              <button
+                aria-label="Open menu"
+                onClick={() => setOpen(true)}
+                className="lg:hidden -mr-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px]"
+              >
+                <span className="block h-px w-6 bg-dark" />
+                <span className="block h-px w-6 bg-dark" />
+              </button>
+            </div>
+          </nav>
+        </div>
+      </motion.header>
+
+      {/* Mobile fullscreen overlay */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+            className="fixed inset-0 z-[60] bg-background/95 backdrop-blur-2xl lg:hidden"
+          >
+            <motion.div
+              initial={{ y: "-100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-100%" }}
+              transition={{ duration: 0.6, ease: EASE }}
+              className="h-full"
+            >
+              <div className="container-lux flex items-center justify-between py-5">
+                <span className="font-sans font-semibold uppercase text-lg tracking-[0.26em]">
+                  Novera
+                </span>
+                <button
+                  aria-label="Close menu"
+                  onClick={() => setOpen(false)}
+                  className="relative h-8 w-8"
+                >
+                  <span className="absolute left-0 top-1/2 h-px w-7 bg-dark rotate-45" />
+                  <span className="absolute left-0 top-1/2 h-px w-7 bg-dark -rotate-45" />
+                </button>
+              </div>
+
+              <ul className="container-lux mt-12 flex flex-col gap-2">
+                {NAV_LINKS.map((l, i) => (
+                  <motion.li
+                    key={l.href}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 + i * 0.07, duration: 0.6, ease: EASE }}
+                  >
+                    <a
+                      href={l.href}
+                      onClick={() => setOpen(false)}
+                      className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
+                    >
+                      {l.label}
+                    </a>
+                  </motion.li>
+                ))}
+                <motion.li
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.55, duration: 0.6, ease: EASE }}
+                >
+                  <a
+                    href="/signin"
+                    onClick={() => setOpen(false)}
+                    className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
+                  >
+                    Sign in
+                  </a>
+                </motion.li>
+              </ul>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}

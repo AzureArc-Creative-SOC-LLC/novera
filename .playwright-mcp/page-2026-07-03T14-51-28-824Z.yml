@@ -1,0 +1,33 @@
+- generic [active] [ref=f12e1]:
+  - main [ref=f12e2]:
+    - generic [ref=f12e5]:
+      - link "Novera" [ref=f12e6] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - generic [ref=f12e8]:
+        - paragraph [ref=f12e9]: Account
+        - heading "Welcome back." [level=1] [ref=f12e10]
+        - paragraph [ref=f12e11]: Sign in to access your orders and documentation.
+      - generic [ref=f12e12]:
+        - generic [ref=f12e13]:
+          - textbox "Email address" [ref=f12e14]
+          - generic: Email address
+        - generic [ref=f12e15]:
+          - textbox "Password" [ref=f12e16]
+          - generic: Password
+          - button "Show password" [ref=f12e17]:
+            - img [ref=f12e18]
+        - generic [ref=f12e23]:
+          - generic [ref=f12e24] [cursor=pointer]:
+            - checkbox "Remember me" [ref=f12e25]
+            - img [ref=f12e27]
+            - text: Remember me
+          - link "Forgot password?" [ref=f12e29] [cursor=pointer]:
+            - /url: "#"
+        - button "Sign in" [ref=f12e30]
+      - paragraph [ref=f12e31]:
+        - text: New to Novera?
+        - button "Create an account" [ref=f12e32]
+      - paragraph [ref=f12e33]: For laboratory R&D use only
+  - button "Open Next.js Dev Tools" [ref=f12e39] [cursor=pointer]:
+    - img [ref=f12e40]

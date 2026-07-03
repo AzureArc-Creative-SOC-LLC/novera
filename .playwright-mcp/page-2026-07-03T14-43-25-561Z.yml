@@ -1,0 +1,130 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - navigation [ref=f7e4]:
+      - link "Novera" [ref=f7e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f7e6]:
+        - link "Sign in" [ref=f7e7] [cursor=pointer]:
+          - /url: /signin
+        - link "Cart, 0 items" [ref=f7e8] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=f7e9]
+        - button "Open menu" [ref=f7e13]
+  - main [ref=f7e16]:
+    - generic [ref=f7e17]:
+      - generic [ref=f7e18]:
+        - paragraph [ref=f7e19]: Checkout
+        - heading "Complete your order" [level=1] [ref=f7e20]
+        - link "← Back to cart" [ref=f7e21] [cursor=pointer]:
+          - /url: /cart
+      - generic [ref=f7e22]:
+        - generic [ref=f7e23]:
+          - generic [ref=f7e24]:
+            - heading "Contact" [level=2] [ref=f7e25]
+            - generic [ref=f7e26]:
+              - textbox "First name" [ref=f7e27]
+              - textbox "Last name" [ref=f7e28]
+              - textbox "Email address" [ref=f7e29]
+              - textbox "Mobile number" [ref=f7e30]
+          - generic [ref=f7e31]:
+            - heading "Shipping address" [level=2] [ref=f7e32]
+            - generic [ref=f7e33]:
+              - textbox "Address line 1" [ref=f7e34]
+              - textbox "Address line 2 (optional)" [ref=f7e35]
+              - generic [ref=f7e36]:
+                - textbox "City" [ref=f7e37]
+                - textbox "Postcode" [ref=f7e38]
+              - combobox [ref=f7e39]:
+                - option "United Arab Emirates" [selected]
+                - option "United Kingdom"
+                - option "United States"
+                - option "Saudi Arabia"
+                - option "Germany"
+                - option "France"
+                - option "Australia"
+                - option "Canada"
+                - option "Singapore"
+          - paragraph [ref=f7e40]: For laboratory R&D use only — not for human or veterinary consumption.
+        - complementary [ref=f7e41]:
+          - generic [ref=f7e42]:
+            - heading "Order summary" [level=2] [ref=f7e43]
+            - generic [ref=f7e46]:
+              - textbox "Discount code" [ref=f7e47]
+              - button "Apply" [disabled] [ref=f7e48]
+            - generic [ref=f7e49]:
+              - generic [ref=f7e50]:
+                - generic [ref=f7e51]: Subtotal
+                - generic [ref=f7e52]: $0
+              - generic [ref=f7e53]:
+                - generic [ref=f7e54]: Tracked shipping
+                - generic [ref=f7e55]: Free
+            - generic [ref=f7e56]:
+              - generic [ref=f7e57]: Total
+              - generic [ref=f7e58]: $0
+            - button "Place Order" [ref=f7e59]
+            - link "Back to cart" [ref=f7e60] [cursor=pointer]:
+              - /url: /cart
+  - contentinfo [ref=f7e61]:
+    - generic [ref=f7e62]:
+      - generic [ref=f7e63]:
+        - generic [ref=f7e64]:
+          - paragraph [ref=f7e66]: Novera
+          - paragraph [ref=f7e68]: Research-grade peptides and wellness science — clean, reliable, and precisely made in Dubai.
+          - generic [ref=f7e70]:
+            - paragraph [ref=f7e71]: Newsletter
+            - generic [ref=f7e72]:
+              - textbox "Your email address" [ref=f7e73]
+              - button "Subscribe" [ref=f7e74]
+            - paragraph [ref=f7e75]
+        - generic [ref=f7e77]:
+          - paragraph [ref=f7e78]: Explore
+          - list [ref=f7e79]:
+            - listitem [ref=f7e80]:
+              - link "Home" [ref=f7e81] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f7e82]:
+              - link "Products" [ref=f7e83] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f7e84]:
+              - link "About" [ref=f7e85] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f7e86]:
+              - link "Why Us" [ref=f7e87] [cursor=pointer]:
+                - /url: /#why-us
+            - listitem [ref=f7e88]:
+              - link "Testimonials" [ref=f7e89] [cursor=pointer]:
+                - /url: /#testimonials
+            - listitem [ref=f7e90]:
+              - link "Contact" [ref=f7e91] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f7e93]:
+          - paragraph [ref=f7e94]: Our Range
+          - list [ref=f7e95]:
+            - listitem [ref=f7e96]:
+              - link "Tirzepatide" [ref=f7e97] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f7e98]:
+              - link "Retatrutide" [ref=f7e99] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f7e100]:
+              - link "NAD+" [ref=f7e101] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f7e102]:
+              - link "Glow" [ref=f7e103] [cursor=pointer]:
+                - /url: /#products
+      - generic [ref=f7e104]:
+        - generic [ref=f7e105]:
+          - paragraph [ref=f7e106]: Contact
+          - paragraph [ref=f7e107]:
+            - text: Level 12, Innovation One, Business Bay, Dubai, UAE
+            - link "+971 54 000 0000" [ref=f7e108] [cursor=pointer]:
+              - /url: https://wa.me/971540000000
+            - text: ·
+            - link "hello@novera.studio" [ref=f7e109] [cursor=pointer]:
+              - /url: mailto:hello@novera.studio
+        - generic [ref=f7e110]:
+          - paragraph [ref=f7e111]: © 2026 Novera. All rights reserved.
+          - paragraph [ref=f7e112]: Privacy · Terms · Shipping
+      - paragraph [ref=f7e113]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+  - button "Open Next.js Dev Tools" [ref=f7e119] [cursor=pointer]:
+    - img [ref=f7e120]
