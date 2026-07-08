@@ -7,12 +7,11 @@ import { useCart } from "@/components/cart/CartContext";
 import { getProduct, formatPrice } from "@/lib/data";
 import { api, ApiError } from "@/lib/api";
 
-type CentralOrderResponse = {
-  ok: boolean;
+type UserOrderResponse = {
   success: boolean;
-  orderNumber: string;
   orderId: number;
-  totals: { subtotal: number; shipping: number; discount: number; total: number };
+  orderNumber: string;
+  email_debug?: unknown;
 };
 
 type PromoResponse = { ok: boolean; valid: boolean; percent: number };
@@ -97,39 +96,48 @@ export default function CheckoutPage() {
     setSubmitting(true);
     setSubmitError(null);
 
+    const email = form.email.trim();
+    if (!email.includes("@")) {
+      setSubmitError("Please enter a valid email address.");
+      setSubmitting(false);
+      return;
+    }
+
+    const promoActive = promoStatus.kind === "valid";
+    const address = [form.address1.trim(), form.address2.trim()]
+      .filter(Boolean)
+      .join(", ");
+
     try {
-      const res = await api<CentralOrderResponse>("/api/central/orders", {
+      const res = await api<UserOrderResponse>("/api/user-orders", {
         method: "POST",
         json: {
-          customer: {
-            firstName: form.firstName,
-            lastName: form.lastName,
-            email: form.email,
-            mobile: form.mobile,
-          },
-          shippingAddress: {
-            line1: form.address1,
-            line2: form.address2,
-            city: form.city,
-            postcode: form.postcode,
-            country: form.country,
-          },
-          promoCode:
-            promoStatus.kind === "valid" ? form.discount.trim() : undefined,
-          items: lines.map(({ item, product }) => ({
+          email,
+          customerName: `${form.firstName} ${form.lastName}`.trim(),
+          firstName: form.firstName,
+          lastName: form.lastName,
+          phone: form.mobile,
+          address,
+          city: form.city,
+          postcode: form.postcode,
+          country: form.country,
+          itemsArray: lines.map(({ item, product }) => ({
             name: product!.name,
-            price: product!.price,
-            qty: item.qty,
+            quantity: item.qty,
+            unitPrice: product!.price,
+            sku: product!.slug,
           })),
           subtotal,
-          shipping: 0,
-          discount: discountAmount,
+          discountAmount,
           total,
+          promoCode: promoActive ? form.discount.trim() : null,
+          promoDiscount: promoActive ? discountPercent : undefined,
+          payment_method: "manual",
         },
       });
 
       setOrderId(res.orderNumber);
-      setOrderTotal(res.totals?.total ?? total);
+      setOrderTotal(total);
       setPlaced(true);
       clear();
     } catch (err) {
@@ -467,9 +475,10 @@ export default function CheckoutPage() {
             </h3>
 
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              Thanks {firstName} — we&apos;ve received your order. A confirmation
-              will be sent to{" "}
-              <span className="text-dark">{form.email}</span>.
+              Thanks {firstName} — we&apos;ve received your order. No card has
+              been charged; we&apos;ll email{" "}
+              <span className="text-dark">{form.email}</span> with confirmation
+              and payment details.
             </p>
 
             <div className="mt-6 rounded-2xl border border-line bg-background-secondary p-4 text-left">
@@ -480,7 +489,7 @@ export default function CheckoutPage() {
                 </span>
               </div>
               <div className="mt-3 flex items-center justify-between font-serif text-lg">
-                <span className="text-dark">Total paid</span>
+                <span className="text-dark">Order total</span>
                 <span className="text-dark">{formatPrice(orderTotal)}</span>
               </div>
             </div>
