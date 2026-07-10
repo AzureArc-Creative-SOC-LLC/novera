@@ -1,4 +1,7 @@
-import { sendOrderConfirmationEmail } from "../../../../../../shared-email/order-email.js";
+import { sendOrderConfirmationEmail } from "../../../../../shared-email/order-email.js";
+// On the VPS, sites are deployed flat as /var/www/<site>/, sibling to
+// /var/www/shared-email/ — 5 dirs back from this route to the site root's
+// parent, then into shared-email.
 
 type SendOrderConfirmationBody = {
   customer: { name: string; email: string };
