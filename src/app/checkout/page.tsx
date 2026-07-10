@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/components/cart/CartContext";
 import { getProduct, formatPrice } from "@/lib/data";
-import { api, ApiError } from "@/lib/api";
+import { api, ApiError, sendOrderConfirmationEmail } from "@/lib/api";
 
 type UserOrderResponse = {
   success: boolean;
@@ -140,6 +140,30 @@ export default function CheckoutPage() {
       setOrderTotal(total);
       setPlaced(true);
       clear();
+
+      sendOrderConfirmationEmail({
+        customer: {
+          name: `${form.firstName} ${form.lastName}`.trim() || "Customer",
+          email,
+        },
+        order: {
+          orderNumber: res.orderNumber,
+          currency: "USD",
+          items: lines.map(({ item, product }) => ({
+            name: product!.name,
+            quantity: item.qty,
+            price: product!.price,
+          })),
+          subtotal,
+          shipping: 0,
+          tax: 0,
+          discount: discountAmount,
+          total,
+          shippingAddress: [form.address1, form.address2, form.city, form.postcode, form.country]
+            .filter(Boolean)
+            .join(", "),
+        },
+      });
     } catch (err) {
       setSubmitError(
         err instanceof Error ? err.message : "Failed to place order."

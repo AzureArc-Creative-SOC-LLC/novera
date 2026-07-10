@@ -133,3 +133,20 @@ export async function api<T = unknown>(
 
   return data as T;
 }
+
+// Fires the shared-email order confirmation (see /shared-email at the repo
+// root)
+export async function sendOrderConfirmationEmail(params: {
+  customer: { name: string; email: string };
+  order: Record<string, unknown>;
+}): Promise<void> {
+  try {
+    await fetch("/api/send-order-confirmation", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(params),
+    });
+  } catch (err) {
+    console.error("[checkout] order confirmation email failed:", err);
+  }
+}
