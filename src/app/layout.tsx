@@ -5,7 +5,15 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Navigation from "@/components/Navigation";
 import ScrollProgress from "@/components/ScrollProgress";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import { CartProvider } from "@/components/cart/CartContext";
+import {
+  ORGANIZATION_SCHEMA,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+  WEBSITE_SCHEMA,
+} from "@/lib/site";
 
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
@@ -21,15 +29,37 @@ const sans = Inter({
   display: "swap",
 });
 
+const TITLE = "Novera — Research-Grade Peptides & Wellness Science";
+
 export const metadata: Metadata = {
-  title: "Novera — Research-Grade Peptides & Wellness Science",
-  description:
-    "Novera supplies research-grade peptides and wellness supplements — clean, reliable, and precisely made in Dubai, with verified purity and fast support.",
+  // Without metadataBase, Next cannot turn relative OG/canonical paths into the
+  // absolute URLs that crawlers and social scrapers require.
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    // Child pages set only their own name; the brand suffix is appended here.
+    template: `%s — ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Novera — Research-Grade Peptides & Wellness Science",
-    description:
-      "Research-grade peptides and wellness supplements with verified purity, controlled consistency, and secure global delivery.",
+    title: TITLE,
+    description: SITE_DESCRIPTION,
     type: "website",
+    siteName: SITE_NAME,
+    url: "/",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
@@ -41,6 +71,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>
+        <JsonLd schema={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]} />
         <CartProvider>
           <SmoothScroll>
             <ScrollProgress />

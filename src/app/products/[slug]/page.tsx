@@ -11,6 +11,8 @@ import {
 } from "@/lib/data";
 import AddToCart from "@/components/cart/AddToCart";
 import ProductGallery from "@/components/ProductGallery";
+import JsonLd from "@/components/JsonLd";
+import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -23,10 +25,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product) return { title: "Product — Novera" };
+  if (!product) return { title: "Product Not Found" };
+
+  const url = `/products/${product.slug}`;
+
   return {
-    title: `${product.name} — Novera`,
+    // Brand suffix comes from the root layout's title template.
+    title: product.name,
     description: product.summary,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${product.name} — ${SITE_NAME}`,
+      description: product.summary,
+      type: "website",
+      url,
+      siteName: SITE_NAME,
+      images: [
+        { url: product.image, width: 1200, height: 1200, alt: product.name },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} — ${SITE_NAME}`,
+      description: product.summary,
+      images: [product.image],
+    },
   };
 }
 
@@ -40,21 +63,74 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const related = relatedProducts(slug);
+  const url = absoluteUrl(`/products/${product.slug}`);
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: product.gallery.map((src) => absoluteUrl(src)),
+    sku: product.slug,
+    category: product.tag,
+    brand: { "@type": "Brand", name: SITE_NAME },
+    offers: {
+      "@type": "Offer",
+      url,
+      price: product.price,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      seller: { "@id": absoluteUrl("/#organization") },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Products",
+        item: absoluteUrl("/#products"),
+      },
+      { "@type": "ListItem", position: 3, name: product.name, item: url },
+    ],
+  };
 
   return (
     <main className="pt-28 lg:pt-32 pb-20">
+      <JsonLd schema={[productSchema, breadcrumbSchema]} />
       <div className="container-lux">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-muted mb-10">
-          <Link href="/" className="hover:text-dark transition-colors">
-            Home
-          </Link>
-          <span className="mx-2 text-line">/</span>
-          <Link href="/#products" className="hover:text-dark transition-colors">
-            Products
-          </Link>
-          <span className="mx-2 text-line">/</span>
-          <span className="text-dark">{product.name}</span>
+        {/* Breadcrumb — aria-label distinguishes it from the primary nav */}
+        <nav aria-label="Breadcrumb" className="text-sm text-muted mb-10">
+          <ol className="flex flex-wrap items-center">
+            <li>
+              <Link href="/" className="hover:text-dark transition-colors">
+                Home
+              </Link>
+            </li>
+            <li aria-hidden="true" className="mx-2 text-line">
+              /
+            </li>
+            <li>
+              <Link
+                href="/#products"
+                className="hover:text-dark transition-colors"
+              >
+                Products
+              </Link>
+            </li>
+            <li aria-hidden="true" className="mx-2 text-line">
+              /
+            </li>
+            <li>
+              <span aria-current="page" className="text-dark">
+                {product.name}
+              </span>
+            </li>
+          </ol>
         </nav>
 
         {/* Detail */}
