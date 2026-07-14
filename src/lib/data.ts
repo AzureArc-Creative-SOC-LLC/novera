@@ -122,19 +122,19 @@ export const WHY_US = [
     no: "01",
     title: "Purity, verified.",
     text: "Every batch is independently analysed by HPLC and mass spectrometry against a ≥99% purity target. A certificate of analysis ships with each order — no guesswork, ever.",
-    image: "/images/purity-new.jpeg",
+    image: "/images/whyus-purity-seo1.webp",
   },
   {
     no: "02",
     title: "Controlled consistency.",
     text: "Formulations are produced under ISO-aligned, tightly controlled processes, so concentration and quality stay uniform from the first vial to the thousandth.",
-    image: "/images/consistency-new.jpeg",
+    image: "/images/controlled-seo1.webp",
   },
   {
     no: "03",
     title: "Secure, global delivery.",
     text: "Temperature-stable, tamper-evident, discreet packaging with tracked worldwide shipping — your order arrives intact, on time, and exactly as specified.",
-    image: "/images/delivery-new.jpeg",
+    image: "/images/secure-seo-new.webp",
   },
 ];
 
@@ -144,28 +144,28 @@ export const TESTIMONIALS = [
       "I've ordered four times now and every batch matches its COA to the decimal. That kind of consistency is exactly what our experiments depend on — I won't source from anyone else.",
     name: "Dr. Hana Al-Rashid",
     role: "Verified Client",
-    image: "/images/review-hana.jpeg",
+    image: "/images/customer-seo1.webp",
   },
   {
     quote:
       "Messaged them on WhatsApp late at night and got a real, helpful answer in minutes. The parcel arrived sealed, cold, and a day ahead of schedule. Easily the smoothest supplier I've dealt with.",
     name: "Marcus Feldmann",
     role: "Verified Buyer",
-    image: "/images/review-marcus.jpeg",
+    image: "/images/customer2-seo.webp",
   },
   {
     quote:
       "The purity reporting is transparent and the documentation is spotless. I now recommend Novera to every colleague who asks me where I source from.",
     name: "Priya Nair",
     role: "Returning Client",
-    image: "/images/review-priya.jpeg",
+    image: "/images/customer3-seo.webp",
   },
   {
     quote:
       "The Glow line has become a staple for my clients — clean, well-formulated, and they genuinely feel the difference. Reordering is effortless and it always arrives on time.",
     name: "Sofia Marchetti",
     role: "Wellness Client",
-    image: "/images/review-sofia.jpeg",
+    image: "/images/customer4-seo.webp",
   },
 ];
 

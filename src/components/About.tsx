@@ -11,7 +11,7 @@ export default function About() {
           {/* Oversized image — visually overpowers the text */}
           <div className="lg:col-span-7 order-1">
             <RevealImage
-              src="/images/about.jpeg"
+              src="/images/about-seo.webp"
               alt="Inside the Novera research facility"
               sizes="(max-width: 1024px) 100vw, 58vw"
               className="aspect-[4/5] w-full rounded-[28px] lg:rounded-[32px]"

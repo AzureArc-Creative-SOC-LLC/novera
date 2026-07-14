@@ -40,6 +40,7 @@ export default function WhyUs() {
                     alt={f.title}
                     sizes="(max-width: 1024px) 100vw, 60vw"
                     className="aspect-[16/10] w-full rounded-[28px] lg:rounded-[32px]"
+                    imgClassName="scale-90"
                   />
                 </div>
 

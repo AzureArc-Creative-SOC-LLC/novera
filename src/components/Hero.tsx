@@ -10,7 +10,7 @@ import { useGSAP } from "@/lib/useGSAP";
 const EASE = [0.22, 0.61, 0.36, 1] as const;
 const EASE_IMG = [0.165, 0.84, 0.44, 1] as const;
 
-const HERO_IMG = "/images/hero-image1.png";
+const HERO_IMG = "/images/hero-seo1.webp";
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -100,7 +100,7 @@ export default function Hero() {
             fill
             priority
             sizes="42vw"
-            className="object-cover object-top img-grade"
+            className="object-cover object-top img-grade scale-90"
           />
         </div>
       </motion.div>
@@ -247,7 +247,7 @@ export default function Hero() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-top img-grade"
+            className="object-cover object-top img-grade scale-90"
           />
           <span className="absolute top-4 left-4 font-sans font-bold text-5xl leading-none text-background/90 mix-blend-difference">
             01

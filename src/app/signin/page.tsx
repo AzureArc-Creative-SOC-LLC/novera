@@ -33,9 +33,13 @@ function EyeIcon({ open }: { open: boolean }) {
   );
 }
 
+type ForgotResponse = { success: boolean; message: string };
+
+type Mode = "signin" | "signup" | "forgot";
+
 export default function SignInPage() {
   const router = useRouter();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [mode, setMode] = useState<Mode>("signin");
   const [showPass, setShowPass] = useState(false);
   const [form, setForm] = useState({
     firstName: "",
@@ -55,7 +59,7 @@ export default function SignInPage() {
     (e: React.ChangeEvent<HTMLInputElement>) =>
       setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  const switchMode = (m: "signin" | "signup") => {
+  const switchMode = (m: Mode) => {
     setMode(m);
     setNotice(null);
     setErrorMsg(null);
@@ -85,6 +89,15 @@ export default function SignInPage() {
         setNotice(
           "Account created — please sign in with your new credentials."
         );
+      } else if (mode === "forgot") {
+        const res = await api<ForgotResponse>("/api/auth/forgot-password", {
+          method: "POST",
+          json: { email: form.email },
+        });
+        setNotice(
+          res.message ||
+            "If an account exists with this email, a password reset link has been sent."
+        );
       } else {
         const res = await api<AuthResponse>("/api/auth/login", {
           method: "POST",
@@ -107,6 +120,7 @@ export default function SignInPage() {
   };
 
   const isSignup = mode === "signup";
+  const isForgot = mode === "forgot";
 
   return (
     <main className="min-h-screen bg-background">
@@ -114,7 +128,7 @@ export default function SignInPage() {
         {/* ── Left — editorial visual ── */}
         <aside className="relative hidden lg:block overflow-hidden">
           <Image
-            src="/images/purity-new.jpeg"
+            src="/images/whyus-purity-seo1.webp"
             alt=""
             fill
             priority
@@ -176,6 +190,8 @@ export default function SignInPage() {
                   <h1 className="text-section leading-[1.05]">
                     {isSignup ? (
                       <>Create your <em className="not-italic text-olive">Novera</em> account.</>
+                    ) : isForgot ? (
+                      <>Reset your <em className="not-italic text-olive">password</em>.</>
                     ) : (
                       <>Welcome back.</>
                     )}
@@ -183,7 +199,9 @@ export default function SignInPage() {
                   <p className="text-muted mt-4 text-[0.95rem] leading-relaxed max-w-sm">
                     {isSignup
                       ? "Track orders, access COAs, and manage recurring shipments."
-                      : "Sign in to access your orders and documentation."}
+                      : isForgot
+                        ? "Enter your account email and we'll send a secure link to reset your password."
+                        : "Sign in to access your orders and documentation."}
                   </p>
                 </div>
 
@@ -310,32 +328,34 @@ export default function SignInPage() {
                     </label>
                   </div>
 
-                  <div className={fieldWrap}>
-                    <input
-                      id="password"
-                      required
-                      type={showPass ? "text" : "password"}
-                      value={form.password}
-                      onChange={set("password")}
-                      className={`${inputCls} pr-12`}
-                      placeholder="Password"
-                      autoComplete={isSignup ? "new-password" : "current-password"}
-                      minLength={6}
-                    />
-                    <label htmlFor="password" className={labelCls}>
-                      Password
-                    </label>
-                    <button
-                      type="button"
-                      onClick={() => setShowPass((v) => !v)}
-                      aria-label={showPass ? "Hide password" : "Show password"}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 text-muted hover:text-dark transition-colors"
-                    >
-                      <EyeIcon open={showPass} />
-                    </button>
-                  </div>
+                  {!isForgot && (
+                    <div className={fieldWrap}>
+                      <input
+                        id="password"
+                        required
+                        type={showPass ? "text" : "password"}
+                        value={form.password}
+                        onChange={set("password")}
+                        className={`${inputCls} pr-12`}
+                        placeholder="Password"
+                        autoComplete={isSignup ? "new-password" : "current-password"}
+                        minLength={6}
+                      />
+                      <label htmlFor="password" className={labelCls}>
+                        Password
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => setShowPass((v) => !v)}
+                        aria-label={showPass ? "Hide password" : "Show password"}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 text-muted hover:text-dark transition-colors"
+                      >
+                        <EyeIcon open={showPass} />
+                      </button>
+                    </div>
+                  )}
 
-                  {!isSignup && (
+                  {!isSignup && !isForgot && (
                     <div className="flex items-center justify-between mt-1">
                       <label className="inline-flex items-center gap-2 text-xs text-muted cursor-pointer select-none">
                         <input type="checkbox" className="peer sr-only" />
@@ -357,12 +377,13 @@ export default function SignInPage() {
                         </span>
                         Remember me
                       </label>
-                      <Link
-                        href="#"
+                      <button
+                        type="button"
+                        onClick={() => switchMode("forgot")}
                         className="link-underline text-xs text-muted hover:text-dark"
                       >
                         Forgot password?
-                      </Link>
+                      </button>
                     </div>
                   )}
 
@@ -386,10 +407,16 @@ export default function SignInPage() {
                     {loading ? (
                       <span className="inline-flex items-center gap-2">
                         <span className="h-3 w-3 rounded-full border-2 border-background border-r-transparent animate-spin" />
-                        {isSignup ? "Creating account…" : "Signing in…"}
+                        {isSignup
+                          ? "Creating account…"
+                          : isForgot
+                            ? "Sending reset link…"
+                            : "Signing in…"}
                       </span>
                     ) : isSignup ? (
                       "Create account"
+                    ) : isForgot ? (
+                      "Send reset link"
                     ) : (
                       "Sign in"
                     )}
@@ -407,6 +434,17 @@ export default function SignInPage() {
                         className="link-underline text-dark font-medium"
                       >
                         Sign in
+                      </button>
+                    </>
+                  ) : isForgot ? (
+                    <>
+                      Remembered your password?{" "}
+                      <button
+                        type="button"
+                        onClick={() => switchMode("signin")}
+                        className="link-underline text-dark font-medium"
+                      >
+                        Back to sign in
                       </button>
                     </>
                   ) : (
