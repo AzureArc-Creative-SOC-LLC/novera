@@ -1,5 +1,5 @@
-"use client";
-
+// Server component — see the note in About.tsx. Only the Reveal wrappers are
+// client code; the copy and layout render to HTML.
 import Reveal from "./Reveal";
 import RevealImage from "./RevealImage";
 import { WHY_US } from "@/lib/data";

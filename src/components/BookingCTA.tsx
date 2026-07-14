@@ -163,6 +163,8 @@ export default function Contact() {
                   <Field label="Full name">
                     <input
                       required
+                      name="name"
+                      autoComplete="name"
                       value={form.name}
                       onChange={set("name")}
                       placeholder="Your name"
@@ -173,6 +175,8 @@ export default function Contact() {
                     <input
                       required
                       type="email"
+                      name="email"
+                      autoComplete="email"
                       value={form.email}
                       onChange={set("email")}
                       placeholder="you@email.com"

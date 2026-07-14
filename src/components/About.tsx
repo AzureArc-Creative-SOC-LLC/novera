@@ -1,5 +1,6 @@
-"use client";
-
+// Server component. It renders the client <Reveal>/<RevealImage> wrappers but
+// has no client-side logic itself, so its markup ships as HTML rather than as
+// JavaScript for the browser to execute.
 import Reveal from "./Reveal";
 import RevealImage from "./RevealImage";
 

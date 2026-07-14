@@ -1,5 +1,5 @@
-"use client";
-
+// Server component — see the note in About.tsx. The product grid is the primary
+// content for crawlers, so it must be in the initial HTML.
 import Link from "next/link";
 import Reveal from "./Reveal";
 import RevealImage from "./RevealImage";

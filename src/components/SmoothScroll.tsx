@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function SmoothScroll({
   children,
@@ -17,8 +15,6 @@ export default function SmoothScroll({
     ).matches;
     if (prefersReduced) return;
 
-    gsap.registerPlugin(ScrollTrigger);
-
     const lenis = new Lenis({
       duration: 1.15,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -26,11 +22,16 @@ export default function SmoothScroll({
       touchMultiplier: 1.6,
     });
 
-    // Drive Lenis with GSAP's ticker so ScrollTrigger stays in sync.
-    lenis.on("scroll", ScrollTrigger.update);
-    const raf = (time: number) => lenis.raf(time * 1000);
-    gsap.ticker.add(raf);
-    gsap.ticker.lagSmoothing(0);
+    // Lenis needs driving from a rAF loop. This was GSAP's ticker purely so
+    // ScrollTrigger stayed in sync; with the Hero's parallax now on framer-
+    // motion (which reads scroll natively), a plain rAF loop is all that's
+    // left — and gsap drops out of the bundle.
+    let frame = 0;
+    const raf = (time: number) => {
+      lenis.raf(time);
+      frame = requestAnimationFrame(raf);
+    };
+    frame = requestAnimationFrame(raf);
 
     // Smooth in-page anchor navigation. Handles "#id" and "/#id" links — the
     // latter only when the target section exists on the current page (home).
@@ -53,7 +54,7 @@ export default function SmoothScroll({
 
     return () => {
       document.removeEventListener("click", onClick);
-      gsap.ticker.remove(raf);
+      cancelAnimationFrame(frame);
       lenis.destroy();
     };
   }, []);

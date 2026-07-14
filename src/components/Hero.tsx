@@ -2,10 +2,12 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@/lib/useGSAP";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 const EASE = [0.22, 0.61, 0.36, 1] as const;
 const EASE_IMG = [0.165, 0.84, 0.44, 1] as const;
@@ -14,34 +16,17 @@ const HERO_IMG = "/images/hero-new-seo.webp";
 
 export default function Hero() {
   const reduce = useReducedMotion();
-  const driftRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
-  // Subtle scroll-linked parallax pan inside the portrait frame.
-  useGSAP(() => {
-    const el = driftRef.current;
-    if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    gsap.registerPlugin(ScrollTrigger);
-    const tween = gsap.fromTo(
-      el,
-      { yPercent: -6 },
-      {
-        yPercent: 6,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#top",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
-      }
-    );
-    return () => {
-      tween.scrollTrigger?.kill();
-      tween.kill();
-    };
-  }, []);
+  // Subtle scroll-linked parallax pan inside the portrait frame. framer-motion's
+  // useScroll replaces GSAP ScrollTrigger: the offsets below are the equivalent
+  // of start:"top bottom" / end:"bottom top" with scrub, so the motion is
+  // unchanged — but it drops gsap + ScrollTrigger from the bundle entirely.
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const driftY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
 
   const rise = (delay: number) => ({
     initial: reduce ? false : { opacity: 0, y: 30 },
@@ -50,7 +35,11 @@ export default function Hero() {
   });
 
   return (
-    <section id="top" className="relative min-h-[100svh] overflow-hidden">
+    <section
+      id="top"
+      ref={sectionRef}
+      className="relative min-h-[100svh] overflow-hidden"
+    >
       {/* ---- Right-side box effect, set behind the portrait ---- */}
       <div
         aria-hidden
@@ -89,11 +78,16 @@ export default function Hero() {
         transition={{ duration: 1.6, ease: EASE_IMG, delay: 0.25 }}
         className="hidden lg:block absolute top-[10%] bottom-0 right-[9%] w-[33%] xl:w-[31%] overflow-hidden"
       >
-        <div
-          ref={driftRef}
+        <motion.div
           className="absolute -top-[8%] -bottom-[8%] left-0 right-0"
-          style={{ willChange: "transform" }}
+          style={{ y: reduce ? 0 : driftY, willChange: "transform" }}
         >
+          {/* The hero is rendered twice — this desktop copy and the mobile one
+              further down. `priority` preloads regardless of whether the copy is
+              displayed, so marking both would download a full-size image that
+              one breakpoint never shows (measured: a wasted 147KB on desktop).
+              This copy keeps priority for a fast desktop LCP; the mobile copy is
+              lazy, and a display:none lazy image is never fetched at all. */}
           <Image
             src={HERO_IMG}
             alt="Novera research-grade peptide product"
@@ -102,7 +96,7 @@ export default function Hero() {
             sizes="42vw"
             className="object-cover object-top img-grade scale-75"
           />
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* ---- Decorative geometry (desktop) ---- */}
@@ -241,11 +235,13 @@ export default function Hero() {
           transition={{ duration: 1.4, ease: EASE_IMG, delay: 0.4 }}
           className="lg:hidden mt-12 relative aspect-[3/4] w-full overflow-hidden"
         >
+          {/* Lazy, not priority: on desktop this copy is display:none and is
+              therefore never fetched. On mobile it sits at the top of the page,
+              so it still starts loading during first layout. */}
           <Image
             src={HERO_IMG}
             alt="Novera research-grade peptide product"
             fill
-            priority
             sizes="100vw"
             className="object-cover object-top img-grade scale-75"
           />
