@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { NAV_LINKS } from "@/lib/data";
@@ -13,7 +14,7 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 function CartButton({ onClick }: { onClick?: () => void }) {
   const { count } = useCart();
   return (
-    <a
+    <Link
       href="/cart"
       onClick={onClick}
       aria-label={`Cart, ${count} item${count === 1 ? "" : "s"}`}
@@ -35,11 +36,14 @@ function CartButton({ onClick }: { onClick?: () => void }) {
         <circle cx="18" cy="20" r="1.4" />
       </svg>
       {count > 0 && (
-        <span className="absolute -top-0.5 -right-0.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-olive px-1 text-[0.65rem] font-medium text-background">
+        <span
+          aria-hidden="true"
+          className="absolute -top-0.5 -right-0.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-olive px-1 text-[0.65rem] font-medium text-background"
+        >
           {count}
         </span>
       )}
-    </a>
+    </Link>
   );
 }
 
@@ -47,6 +51,8 @@ export default function Navigation() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const burgerRef = useRef<HTMLButtonElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   const hidden = CHROMELESS_ROUTES.some((r) => pathname?.startsWith(r));
 
@@ -62,6 +68,24 @@ export default function Navigation() {
     document.documentElement.classList.toggle("lenis-stopped", open);
     return () => document.documentElement.classList.remove("lenis-stopped");
   }, [open]);
+
+  // Escape closes the overlay, and focus moves into it on open / back to the
+  // burger on close — otherwise a keyboard user is left on a button hidden
+  // behind a full-screen dialog.
+  useEffect(() => {
+    if (!open) return;
+    closeRef.current?.focus();
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
+  const closeMenu = () => {
+    setOpen(false);
+    burgerRef.current?.focus();
+  };
 
   if (hidden) return null;
 
@@ -80,45 +104,54 @@ export default function Navigation() {
               : "bg-transparent border-b border-transparent"
           }`}
         >
-          <nav className="container-lux flex items-center justify-between gap-8 py-5">
+          <nav
+            aria-label="Primary"
+            className="container-lux flex items-center justify-between gap-8 py-5"
+          >
             {/* Logo */}
-            <a
+            <Link
               href="/"
+              aria-label="Novera — home"
               className="font-sans font-semibold uppercase text-lg md:text-xl tracking-[0.26em] leading-none text-dark"
             >
               Novera
-            </a>
+            </Link>
 
             {/* Desktop links */}
             <ul className="hidden lg:flex items-center gap-10 text-sm text-muted">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a
+                  <Link
                     href={l.href}
-                    className="link-underline hover:text-dark transition-colors duration-500"
+                    aria-current={pathname === l.href ? "page" : undefined}
+                    className="link-underline hover:text-dark transition-colors duration-500 aria-[current=page]:text-dark"
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
 
             {/* Cart + CTA + burger */}
             <div className="flex items-center gap-2 sm:gap-4">
-              <a
+              <Link
                 href="/signin"
                 className="hidden sm:inline-flex link-underline text-sm text-muted hover:text-dark transition-colors duration-500"
               >
                 Sign in
-              </a>
+              </Link>
               <CartButton />
               <button
+                ref={burgerRef}
+                type="button"
                 aria-label="Open menu"
+                aria-expanded={open}
+                aria-controls="mobile-menu"
                 onClick={() => setOpen(true)}
                 className="lg:hidden -mr-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px]"
               >
-                <span className="block h-px w-6 bg-dark" />
-                <span className="block h-px w-6 bg-dark" />
+                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
+                <span aria-hidden="true" className="block h-px w-6 bg-dark" />
               </button>
             </div>
           </nav>
@@ -129,6 +162,10 @@ export default function Navigation() {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -147,12 +184,20 @@ export default function Navigation() {
                   Novera
                 </span>
                 <button
+                  ref={closeRef}
+                  type="button"
                   aria-label="Close menu"
-                  onClick={() => setOpen(false)}
-                  className="relative h-8 w-8"
+                  onClick={closeMenu}
+                  className="relative h-11 w-11"
                 >
-                  <span className="absolute left-0 top-1/2 h-px w-7 bg-dark rotate-45" />
-                  <span className="absolute left-0 top-1/2 h-px w-7 bg-dark -rotate-45" />
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-2 top-1/2 h-px w-7 bg-dark rotate-45"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-2 top-1/2 h-px w-7 bg-dark -rotate-45"
+                  />
                 </button>
               </div>
 
@@ -162,15 +207,19 @@ export default function Navigation() {
                     key={l.href}
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 + i * 0.07, duration: 0.6, ease: EASE }}
+                    transition={{
+                      delay: 0.2 + i * 0.07,
+                      duration: 0.6,
+                      ease: EASE,
+                    }}
                   >
-                    <a
+                    <Link
                       href={l.href}
-                      onClick={() => setOpen(false)}
+                      onClick={closeMenu}
                       className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
                     >
                       {l.label}
-                    </a>
+                    </Link>
                   </motion.li>
                 ))}
                 <motion.li
@@ -178,13 +227,13 @@ export default function Navigation() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.55, duration: 0.6, ease: EASE }}
                 >
-                  <a
+                  <Link
                     href="/signin"
-                    onClick={() => setOpen(false)}
+                    onClick={closeMenu}
                     className="font-serif text-5xl sm:text-6xl py-3 block leading-tight"
                   >
                     Sign in
-                  </a>
+                  </Link>
                 </motion.li>
               </ul>
             </motion.div>

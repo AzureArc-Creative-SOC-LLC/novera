@@ -135,7 +135,11 @@ function NewsletterForm() {
         onSubmit={onSubmit}
         className="relative flex items-center rounded-full border border-line bg-card focus-within:border-olive transition-colors"
       >
+        <label htmlFor="newsletter-email" className="sr-only">
+          Your email address
+        </label>
         <input
+          id="newsletter-email"
           type="email"
           name="email"
           required

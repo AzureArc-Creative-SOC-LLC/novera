@@ -241,3 +241,39 @@ html.lenis body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---- Keyboard focus (WCAG 2.4.7) ----
+   Nothing in the design showed a focus state, so keyboard users had no way to
+   tell where they were. :focus-visible only fires for keyboard/AT navigation,
+   so mouse clicks stay visually unchanged. */
+:focus-visible {
+  outline: 2px solid var(--deep-olive);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Skip link — off-screen until focused, then pinned top-left. */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--dark);
+  color: var(--background);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: top 0.2s var(--ease-lux);
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Touch targets: WCAG 2.5.8 asks for 24x24 CSS px minimum. */
+button,
+a[role="button"],
+input[type="submit"] {
+  min-height: 24px;
+}

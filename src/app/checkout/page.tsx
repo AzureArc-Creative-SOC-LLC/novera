@@ -16,11 +16,54 @@ type UserOrderResponse = {
 
 type PromoResponse = { ok: boolean; valid: boolean; percent: number };
 
-const inputCls =
-  "w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark placeholder-muted/70 focus:border-olive focus:outline-none transition-colors duration-300";
+// focus-visible (not focus) so the ring appears for keyboard users without
+// firing on mouse clicks — the border tint alone is too subtle to satisfy 2.4.7.
+const FOCUS_RING =
+  "focus:border-olive focus:outline-none focus-visible:ring-2 focus-visible:ring-olive/50";
 
-const selectCls =
-  "w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark focus:border-olive focus:outline-none transition-colors duration-300 appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236d6d6d%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22/></svg>')] bg-no-repeat bg-[right_1.25rem_center]";
+const inputCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark placeholder-muted/70 ${FOCUS_RING} transition-colors duration-300`;
+
+const selectCls = `w-full bg-transparent border border-line rounded-full px-5 py-3.5 text-dark ${FOCUS_RING} transition-colors duration-300 appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%236d6d6d%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22/></svg>')] bg-no-repeat bg-[right_1.25rem_center]`;
+
+// The visual design is placeholder-only, but a placeholder disappears on input
+// and is not a reliable accessible name. Keep the look; bind a real label that
+// only screen readers see.
+function Field({
+  id,
+  label,
+  value,
+  onChange,
+  type = "text",
+  required = false,
+  autoComplete,
+}: {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type?: string;
+  required?: boolean;
+  autoComplete?: string;
+}) {
+  return (
+    <div>
+      <label htmlFor={id} className="sr-only">
+        {label}
+      </label>
+      <input
+        id={id}
+        name={id}
+        type={type}
+        required={required}
+        autoComplete={autoComplete}
+        value={value}
+        onChange={onChange}
+        placeholder={label}
+        className={inputCls}
+      />
+    </div>
+  );
+}
 
 export default function CheckoutPage() {
   const { items, subtotal, clear, hydrated } = useCart();
@@ -225,76 +268,95 @@ export default function CheckoutPage() {
             className="lg:col-span-7 flex flex-col gap-12"
           >
             {/* Contact */}
-            <section>
-              <h2 className="text-subhead text-2xl mb-6">Contact</h2>
+            <section aria-labelledby="checkout-contact">
+              <h2 id="checkout-contact" className="text-subhead text-2xl mb-6">
+                Contact
+              </h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <input
+                <Field
+                  id="firstName"
+                  label="First name"
                   required
+                  autoComplete="given-name"
                   value={form.firstName}
                   onChange={set("firstName")}
-                  className={inputCls}
-                  placeholder="First name"
                 />
-                <input
+                <Field
+                  id="lastName"
+                  label="Last name"
                   required
+                  autoComplete="family-name"
                   value={form.lastName}
                   onChange={set("lastName")}
-                  className={inputCls}
-                  placeholder="Last name"
                 />
-                <input
-                  required
+                <Field
+                  id="email"
+                  label="Email address"
                   type="email"
+                  required
+                  autoComplete="email"
                   value={form.email}
                   onChange={set("email")}
-                  className={inputCls}
-                  placeholder="Email address"
                 />
-                <input
+                <Field
+                  id="mobile"
+                  label="Mobile number"
+                  type="tel"
                   required
+                  autoComplete="tel"
                   value={form.mobile}
                   onChange={set("mobile")}
-                  className={inputCls}
-                  placeholder="Mobile number"
                 />
               </div>
             </section>
 
             {/* Shipping */}
-            <section>
-              <h2 className="text-subhead text-2xl mb-6">Shipping address</h2>
+            <section aria-labelledby="checkout-shipping">
+              <h2 id="checkout-shipping" className="text-subhead text-2xl mb-6">
+                Shipping address
+              </h2>
               <div className="flex flex-col gap-4">
-                <input
+                <Field
+                  id="address1"
+                  label="Address line 1"
                   required
+                  autoComplete="address-line1"
                   value={form.address1}
                   onChange={set("address1")}
-                  className={inputCls}
-                  placeholder="Address line 1"
                 />
-                <input
+                <Field
+                  id="address2"
+                  label="Address line 2 (optional)"
+                  autoComplete="address-line2"
                   value={form.address2}
                   onChange={set("address2")}
-                  className={inputCls}
-                  placeholder="Address line 2 (optional)"
                 />
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <input
+                  <Field
+                    id="city"
+                    label="City"
                     required
+                    autoComplete="address-level2"
                     value={form.city}
                     onChange={set("city")}
-                    className={inputCls}
-                    placeholder="City"
                   />
-                  <input
+                  <Field
+                    id="postcode"
+                    label="Postcode"
                     required
+                    autoComplete="postal-code"
                     value={form.postcode}
                     onChange={set("postcode")}
-                    className={inputCls}
-                    placeholder="Postcode"
                   />
                 </div>
+                <label htmlFor="country" className="sr-only">
+                  Country
+                </label>
                 <select
+                  id="country"
+                  name="country"
                   required
+                  autoComplete="country-name"
                   value={form.country}
                   onChange={set("country")}
                   className={selectCls}
@@ -357,7 +419,12 @@ export default function CheckoutPage() {
               {/* Discount */}
               <div className="mb-6">
                 <div className="flex gap-2">
+                  <label htmlFor="discount" className="sr-only">
+                    Discount code
+                  </label>
                   <input
+                    id="discount"
+                    name="discount"
                     value={form.discount}
                     onChange={(e) => {
                       set("discount")(e);

@@ -72,11 +72,16 @@ export default function RootLayout({
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>
         <JsonLd schema={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]} />
+        {/* First focusable element on the page, so keyboard users can bypass the
+            nav instead of tabbing through it on every route (WCAG 2.4.1). */}
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <CartProvider>
           <SmoothScroll>
             <ScrollProgress />
             <Navigation />
-            {children}
+            <div id="main-content">{children}</div>
             <Footer />
           </SmoothScroll>
         </CartProvider>
