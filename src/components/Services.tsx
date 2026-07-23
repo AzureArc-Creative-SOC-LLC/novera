@@ -26,7 +26,7 @@ export default function Products() {
           <div className="lg:col-span-4 lg:col-start-9 flex items-end">
             <Reveal delay={0.1}>
               <p className="lede">
-                Four focused lines — each lyophilised, sealed, and documented, so
+                Four focused lines each lyophilised, sealed, and documented, so
                 what reaches your bench is exactly what the label states.
               </p>
             </Reveal>

@@ -1,0 +1,8 @@
+- generic [active] [ref=f10e1]:
+  - list [ref=f10e5]:
+    - link [ref=f10e6] [cursor=pointer]:
+      - /url: ./img/c8969a87e2a0bb609fce.png
+      - 'img "Test Report #163217" [ref=f10e8]'
+    - img "Click to download" [ref=f10e9]
+    - img "Click to download" [ref=f10e10]
+  - generic: 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/components/cart/CartContext";
-import { getProduct, formatPrice } from "@/lib/data";
+import { getProduct, formatPrice, DISCLAIMER } from "@/lib/data";
 
 export default function CartPage() {
   const { items, setQty, remove, subtotal, count, hydrated } = useCart();
@@ -106,13 +106,9 @@ export default function CartPage() {
             {/* Summary */}
             <aside className="lg:col-span-4 lg:sticky lg:top-28 rounded-[24px] border border-line bg-card p-7 lg:p-8">
               <h2 className="text-subhead text-2xl mb-6">Order summary</h2>
-              <div className="flex justify-between text-muted mb-3">
+              <div className="flex justify-between text-muted mb-6">
                 <span>Subtotal</span>
                 <span className="text-dark">{formatPrice(subtotal)}</span>
-              </div>
-              <div className="flex justify-between text-muted mb-6">
-                <span>Shipping</span>
-                <span>Calculated at checkout</span>
               </div>
               <div className="flex justify-between text-lg border-t border-line pt-5 mb-8">
                 <span>Total</span>
@@ -129,6 +125,18 @@ export default function CartPage() {
               >
                 Continue browsing
               </Link>
+
+              {/* Research-only acknowledgement */}
+              <div
+                role="note"
+                aria-label="Research-only notice"
+                className="mt-6 rounded-2xl border border-olive/40 bg-olive/5 p-4 text-xs leading-relaxed text-dark"
+              >
+                <p className="text-[0.6rem] tracking-[0.2em] uppercase text-olive font-semibold">
+                  Research use only
+                </p>
+                <p className="mt-2">{DISCLAIMER}</p>
+              </div>
             </aside>
           </div>
         )}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { useCart } from "./CartContext";
 
 export default function AddToCart({ slug }: { slug: string }) {
@@ -43,15 +42,6 @@ export default function AddToCart({ slug }: { slug: string }) {
           {added ? "Added to cart ✓" : "Add to Cart"}
         </button>
       </div>
-
-      {added && (
-        <Link
-          href="/cart"
-          className="link-underline mt-5 inline-block text-sm tracking-wide text-olive"
-        >
-          View cart &amp; checkout →
-        </Link>
-      )}
     </div>
   );
 }

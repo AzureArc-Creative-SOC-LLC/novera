@@ -33,15 +33,15 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="text-muted text-[1.15rem] leading-[1.85] mb-7 max-w-[480px]">
-                Novera was founded in Dubai to advance research with formulations
-                that are clean, reliable, and precisely made. We source only from
-                verified partners and test every batch before it ever leaves us.
+                Novera was founded to advance research with formulations that are
+                clean, reliable, and precisely made. We source only from verified
+                partners and test every batch before it ever leaves us.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="text-muted text-[1.0625rem] leading-[1.85] mb-12 max-w-[480px]">
-                From peptide synthesis to the supplement bench, our standard never
-                changes — controlled processes, transparent documentation, and
+                From peptide synthesis to the research bench, our standard never
+                changes controlled processes, transparent documentation, and
                 support that answers in minutes, not days.
               </p>
             </Reveal>
@@ -49,7 +49,7 @@ export default function About() {
             <Reveal delay={0.2}>
               <div className="grid grid-cols-2 gap-10 max-w-md border-t border-line pt-10">
                 <Stat figure="≥99%" label="Verified purity target" />
-                <Stat figure="10k+" label="Orders shipped worldwide" />
+                <Stat figure="10k+" label="Verified research orders" />
               </div>
             </Reveal>
           </div>

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Your Cart",
   description:
-    "Review the research compounds and wellness products in your Novera cart before checkout.",
+    "Review the research compounds in your Novera cart before checkout. For research purposes only; not for human or veterinary use.",
   robots: { index: false, follow: true },
   alternates: { canonical: "/cart" },
 };

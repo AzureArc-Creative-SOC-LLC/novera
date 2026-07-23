@@ -90,7 +90,7 @@ export default function Hero() {
               lazy, and a display:none lazy image is never fetched at all. */}
           <Image
             src={HERO_IMG}
-            alt="Novera research-grade peptide product"
+            alt="Novera research-grade peptide reference material"
             fill
             priority
             sizes="42vw"
@@ -212,7 +212,7 @@ export default function Hero() {
             Every
           </motion.span>
           <motion.span {...rise(0.5)} className="block text-dark">
-            Vial.
+            Batch.
           </motion.span>
         </h1>
 
@@ -240,7 +240,7 @@ export default function Hero() {
               so it still starts loading during first layout. */}
           <Image
             src={HERO_IMG}
-            alt="Novera research-grade peptide product"
+            alt="Novera research-grade peptide reference material"
             fill
             sizes="100vw"
             className="object-cover object-top img-grade scale-75"

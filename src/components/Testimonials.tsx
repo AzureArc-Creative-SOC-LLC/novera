@@ -67,11 +67,11 @@ export default function Testimonials() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 lg:mb-20">
           <div className="max-w-xl">
             <Reveal>
-              <p className="eyebrow mb-5">Client Reviews</p>
+              <p className="eyebrow mb-5">Verified Research Reviews</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="text-section">
-                Backed by people
+                Trusted by researchers
                 <br />
                 who keep coming back.
               </h2>
@@ -85,7 +85,7 @@ export default function Testimonials() {
               <div>
                 <Stars />
                 <p className="text-sm text-muted mt-1.5">
-                  from 2,000+ verified orders
+                  from 2,000+ verified research orders
                 </p>
               </div>
             </div>

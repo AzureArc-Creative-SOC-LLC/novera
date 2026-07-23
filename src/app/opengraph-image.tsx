@@ -4,7 +4,7 @@ import { SITE_NAME } from "@/lib/site";
 // Generated at build time rather than shipped as a static asset, so the card
 // can never drift out of sync with the brand copy in lib/. Next reuses this for
 // twitter:image too when no twitter-image file exists.
-export const alt = `${SITE_NAME} — Research-Grade Peptides & Wellness Science`;
+export const alt = `${SITE_NAME} — Research-Grade Peptides for Laboratory Analysis`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -66,7 +66,7 @@ export default function OpengraphImage() {
               color: OLIVE,
             }}
           >
-            Every Vial.
+            Every Batch.
           </div>
         </div>
 
@@ -82,7 +82,7 @@ export default function OpengraphImage() {
           }}
         >
           <div style={{ display: "flex" }}>
-            Verified purity · Controlled consistency
+            Verified purity · For research purposes only
           </div>
           <div style={{ display: "flex", color: DARK, fontWeight: 600 }}>
             {SITE_NAME}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/components/cart/CartContext";
-import { getProduct, formatPrice } from "@/lib/data";
+import { getProduct, formatPrice, DISCLAIMER, CHECKOUT_ACKNOWLEDGEMENT } from "@/lib/data";
 import { api, ApiError, sendOrderConfirmationEmail } from "@/lib/api";
 
 type UserOrderResponse = {
@@ -86,7 +86,7 @@ export default function CheckoutPage() {
     address2: "",
     city: "",
     postcode: "",
-    country: "United Arab Emirates",
+    country: "United Kingdom",
     discount: "",
   });
 
@@ -310,10 +310,10 @@ export default function CheckoutPage() {
               </div>
             </section>
 
-            {/* Shipping */}
-            <section aria-labelledby="checkout-shipping">
-              <h2 id="checkout-shipping" className="text-subhead text-2xl mb-6">
-                Shipping address
+            {/* Address */}
+            <section aria-labelledby="checkout-address">
+              <h2 id="checkout-address" className="text-subhead text-2xl mb-6">
+                Address
               </h2>
               <div className="flex flex-col gap-4">
                 <Field
@@ -361,10 +361,8 @@ export default function CheckoutPage() {
                   onChange={set("country")}
                   className={selectCls}
                 >
-                  <option>United Arab Emirates</option>
                   <option>United Kingdom</option>
                   <option>United States</option>
-                  <option>Saudi Arabia</option>
                   <option>Germany</option>
                   <option>France</option>
                   <option>Australia</option>
@@ -374,9 +372,23 @@ export default function CheckoutPage() {
               </div>
             </section>
 
+            <div
+              role="note"
+              aria-label="Research-only acknowledgement"
+              className="rounded-2xl border border-olive/40 bg-olive/5 p-5 text-sm leading-relaxed text-dark"
+            >
+              <p className="text-[0.65rem] tracking-[0.2em] uppercase text-olive font-semibold">
+                Research use only  acknowledgement
+              </p>
+              <p className="mt-2">{CHECKOUT_ACKNOWLEDGEMENT}</p>
+              <p className="mt-3 text-xs text-muted">
+                These products are not intended to diagnose, treat, cure, or
+                prevent any disease.
+              </p>
+            </div>
+
             <p className="text-[0.72rem] leading-relaxed text-muted">
-              For laboratory R&amp;D use only — not for human or veterinary
-              consumption.
+              {DISCLAIMER}
             </p>
           </form>
 
@@ -485,10 +497,6 @@ export default function CheckoutPage() {
                     </span>
                   </div>
                 )}
-                <div className="flex justify-between text-muted">
-                  <span>Tracked shipping</span>
-                  <span className="text-dark">Free</span>
-                </div>
               </div>
 
               <div className="flex justify-between items-baseline mt-5 pt-5 border-t border-line">
@@ -594,7 +602,7 @@ export default function CheckoutPage() {
             </Link>
 
             <p className="mt-5 text-[0.65rem] uppercase tracking-[0.22em] text-muted">
-              For laboratory R&amp;D use only
+              For research purposes only  not for human or veterinary use
             </p>
           </div>
         </div>

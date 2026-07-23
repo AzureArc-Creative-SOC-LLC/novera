@@ -26,8 +26,8 @@ export default function Footer() {
             </Reveal>
             <Reveal delay={0.05}>
               <p className="text-muted mt-6 max-w-sm leading-relaxed">
-                Research-grade peptides and wellness science — clean, reliable, and
-                precisely made in Dubai.
+                Research-grade peptides for laboratory analysis  clean, reliable,
+                and precisely made.
               </p>
             </Reveal>
             <Reveal delay={0.1}>
@@ -55,17 +55,6 @@ export default function Footer() {
           <div>
             <p className="eyebrow mb-3">Contact</p>
             <p className="text-muted leading-relaxed">
-              {CONTACT.address.join(", ")}
-              <br />
-              <a
-                href={CONTACT.whatsappHref}
-                className="link-underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {CONTACT.whatsapp}
-              </a>{" "}
-              ·{" "}
               <a href={`mailto:${CONTACT.email}`} className="link-underline">
                 {CONTACT.email}
               </a>
@@ -73,7 +62,7 @@ export default function Footer() {
           </div>
           <div className="md:text-right text-sm text-muted">
             <p>© {new Date().getFullYear()} Novera. All rights reserved.</p>
-            <p className="mt-1">Privacy · Terms · Shipping</p>
+            <p className="mt-1">Privacy · Terms</p>
           </div>
         </div>
 
@@ -112,7 +101,7 @@ function NewsletterForm() {
         kind: "success",
         msg: res.already_subscribed
           ? "You're already on the list — thank you."
-          : "Thanks — you're on the list.",
+          : "Thanks you're on the list.",
       });
       setEmail("");
     } catch (err) {

@@ -1,0 +1,95 @@
+- generic [ref=e2]:
+  - status "Important notice" [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: "SOCIAL MEDIA WARNING: Alluvi has never operated on any social media platforms. Please don't make any payments or fall victim to anything claiming to be Alluvi on social media platforms. | OFFICIAL SITE: Our official site is www.alluvi.org — we are only handling this site. Please Beware of other scam sites. | RESEARCH USE ONLY – NOT FOR HUMAN CONSUMPTION: All products are for laboratory research and in vitro studies only. Not for human or veterinary use."
+      - generic [ref=e6]: "SOCIAL MEDIA WARNING: Alluvi has never operated on any social media platforms. Please don't make any payments or fall victim to anything claiming to be Alluvi on social media platforms. | OFFICIAL SITE: Our official site is www.alluvi.org — we are only handling this site. Please Beware of other scam sites. | RESEARCH USE ONLY – NOT FOR HUMAN CONSUMPTION: All products are for laboratory research and in vitro studies only. Not for human or veterinary use."
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e10]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img "Alluvi" [ref=e12]
+        - link "Shop" [ref=e14] [cursor=pointer]:
+          - /url: /shop
+        - link "Track" [ref=e18] [cursor=pointer]:
+          - /url: /track-order
+        - link "Wholesale" [ref=e22] [cursor=pointer]:
+          - /url: /wholesale
+        - link "About Us" [ref=e26] [cursor=pointer]:
+          - /url: /about
+        - link "Verify" [ref=e30] [cursor=pointer]:
+          - /url: https://spotafakealluvi.com/
+        - link "Alluvi Brazil" [ref=e34] [cursor=pointer]:
+          - /url: https://alluvibrazil.org/
+    - main [ref=e37]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "Premium Research." [level=1] [ref=e41]
+          - paragraph [ref=e42]: Engineered for precision. Validated by science. Supplying leading laboratories with high-purity research compounds.
+        - generic [ref=e43]:
+          - link "Tirzepatide 40mg Product Tirzepatide 40mg (R&D Only) £ 100 GBP" [ref=e45] [cursor=pointer]:
+            - /url: /product/tirzepatide-40mg
+            - img "Tirzepatide 40mg Product" [ref=e47]
+            - generic [ref=e48]:
+              - heading "Tirzepatide 40mg (R&D Only)" [level=3] [ref=e49]
+              - generic [ref=e50]: £ 100 GBP
+          - link "Retatrutide 20mg Product Retatrutide 20mg (R&D Only) £ 100 GBP" [ref=e52] [cursor=pointer]:
+            - /url: /product/retatrutide-20mg
+            - img "Retatrutide 20mg Product" [ref=e54]
+            - generic [ref=e55]:
+              - heading "Retatrutide 20mg (R&D Only)" [level=3] [ref=e56]
+              - generic [ref=e57]: £ 100 GBP
+          - link "Retatrutide 40mg Product Retatrutide 40mg (R&D Only) £ 180 GBP" [ref=e59] [cursor=pointer]:
+            - /url: /product/retatrutide-40mg
+            - img "Retatrutide 40mg Product" [ref=e61]
+            - generic [ref=e62]:
+              - heading "Retatrutide 40mg (R&D Only)" [level=3] [ref=e63]
+              - generic [ref=e64]: £ 180 GBP
+          - link "Glow 70mg Product Glow 70mg (R&D Only) £ 100 GBP" [ref=e66] [cursor=pointer]:
+            - /url: /product/glow-70mg
+            - img "Glow 70mg Product" [ref=e68]
+            - generic [ref=e69]:
+              - heading "Glow 70mg (R&D Only)" [level=3] [ref=e70]
+              - generic [ref=e71]: £ 100 GBP
+          - link "BPC-157 & TB-500 40mg Product BPC-157 & TB-500 40mg (R&D Only) £ 130 GBP" [ref=e73] [cursor=pointer]:
+            - /url: /product/bpc-157-tb-500-40mg
+            - img "BPC-157 & TB-500 40mg Product" [ref=e75]
+            - generic [ref=e76]:
+              - heading "BPC-157 & TB-500 40mg (R&D Only)" [level=3] [ref=e77]
+              - generic [ref=e78]: £ 130 GBP
+          - link "NAD+ 1,000mg Product NAD+ 1,000mg £ 140 GBP" [ref=e80] [cursor=pointer]:
+            - /url: /product/nad-plus-1000mg
+            - img "NAD+ 1,000mg Product" [ref=e82]
+            - generic [ref=e83]:
+              - heading "NAD+ 1,000mg" [level=3] [ref=e84]
+              - generic [ref=e85]: £ 140 GBP
+    - contentinfo [ref=e86]:
+      - generic [ref=e88]:
+        - link "Alluvi" [ref=e90] [cursor=pointer]:
+          - /url: /
+          - img "Alluvi"
+        - generic [ref=e91]:
+          - link "Shop" [ref=e92] [cursor=pointer]:
+            - /url: /shop
+          - link "About Us" [ref=e93] [cursor=pointer]:
+            - /url: /about
+          - link "Wholesale" [ref=e94] [cursor=pointer]:
+            - /url: /wholesale
+          - link "Home" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - link "Verify" [ref=e96] [cursor=pointer]:
+            - /url: https://spotafakealluvi.com/
+        - generic [ref=e97]:
+          - link "Press Release" [ref=e98] [cursor=pointer]:
+            - /url: /policies/press-release
+          - link "Refund Policy" [ref=e99] [cursor=pointer]:
+            - /url: /policies/refund-policy
+          - link "Shipping Policy" [ref=e100] [cursor=pointer]:
+            - /url: /policies/shipping-policy
+        - generic [ref=e101]:
+          - link "Privacy Policy" [ref=e102] [cursor=pointer]:
+            - /url: /policies/privacy-policy
+          - link "Terms Of Service" [ref=e103] [cursor=pointer]:
+            - /url: /policies/terms-of-service
+          - paragraph [ref=e104]: © 2026 Alluvi. All rights reserved.
+  - button "Wallet" [ref=e105] [cursor=pointer]

@@ -10,7 +10,7 @@ export const SITE_URL = (
 export const SITE_NAME = "Novera";
 
 export const SITE_DESCRIPTION =
-  "Novera supplies research-grade peptides and wellness supplements — verified purity, controlled consistency, and secure global delivery from Dubai.";
+  "Novera supplies research-grade peptides for laboratory analytical work — verified purity, controlled consistency, and independently tested batches. For research purposes only; not for human or veterinary use.";
 
 /** Absolute URL for a site-relative path — required by Open Graph and JSON-LD. */
 export function absoluteUrl(path = "/"): string {
@@ -25,13 +25,6 @@ export const ORGANIZATION_SCHEMA = {
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   email: CONTACT.email,
-  telephone: CONTACT.phone,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: CONTACT.address[0],
-    addressLocality: "Dubai",
-    addressCountry: "AE",
-  },
 } as const;
 
 export const WEBSITE_SCHEMA = {

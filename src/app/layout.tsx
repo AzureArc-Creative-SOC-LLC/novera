@@ -29,7 +29,7 @@ const sans = Inter({
   display: "swap",
 });
 
-const TITLE = "Novera — Research-Grade Peptides & Wellness Science";
+const TITLE = "Novera — Research-Grade Peptides for Laboratory Analysis";
 
 export const metadata: Metadata = {
   // Without metadataBase, Next cannot turn relative OG/canonical paths into the

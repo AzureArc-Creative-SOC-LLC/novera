@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Primary" [ref=e5]:
+      - link "Novera — home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - generic [ref=e7]:
+        - link "Sign in" [ref=e8] [cursor=pointer]:
+          - /url: /signin
+        - link "Cart, 0 items" [ref=e9] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=e14]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - navigation "Breadcrumb" [ref=e20]:
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - link "Home" [ref=e23] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e24]: /
+          - listitem [ref=e25]:
+            - link "Products" [ref=e26] [cursor=pointer]:
+              - /url: /#products
+          - listitem [ref=e27]: /
+          - listitem [ref=e28]: Retatrutide 20 mg
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - img "Retatrutide 20 mg" [ref=e32]
+          - generic [ref=e33]:
+            - button "View image 1" [ref=e34]
+            - button "View image 2" [ref=e35]
+            - button "View image 3" [ref=e36]
+            - button "View image 4" [ref=e37]
+        - generic [ref=e38]:
+          - generic [ref=e39]: Research Use Only
+          - heading "Retatrutide 20 mg" [level=1] [ref=e40]
+          - paragraph [ref=e41]: $149
+          - paragraph [ref=e42]: A next-generation triple-agonist research peptide for advanced metabolic studies. Consistent concentration, reconstitution-ready, and fully documented with a COA in every shipment.
+          - generic [ref=e43]:
+            - paragraph [ref=e44]: Available Strengths
+            - generic [ref=e45]: 20 mg
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - button "Decrease quantity" [ref=e50]: −
+              - generic [ref=e51]: "1"
+              - button "Increase quantity" [ref=e52]: +
+            - button "Add to Cart" [ref=e53]
+          - paragraph [ref=e54]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Related products" [level=2] [ref=e57]
+          - link "View all →" [ref=e58] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=e59]:
+          - link "Tirzepatide Tirzepatide $189 Research Use Only" [ref=e60] [cursor=pointer]:
+            - /url: /products/tirzepatide
+            - img "Tirzepatide" [ref=e62]
+            - generic [ref=e63]:
+              - heading "Tirzepatide" [level=3] [ref=e64]
+              - generic [ref=e65]: $189
+            - paragraph [ref=e66]: Research Use Only
+          - link "NAD+ NAD+ $149 Research Use Only" [ref=e67] [cursor=pointer]:
+            - /url: /products/nad
+            - img "NAD+" [ref=e69]
+            - generic [ref=e70]:
+              - heading "NAD+" [level=3] [ref=e71]
+              - generic [ref=e72]: $149
+            - paragraph [ref=e73]: Research Use Only
+          - link "Glow Glow $59 Wellness Supplement" [ref=e74] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow" [ref=e76]
+            - generic [ref=e77]:
+              - heading "Glow" [level=3] [ref=e78]
+              - generic [ref=e79]: $59
+            - paragraph [ref=e80]: Wellness Supplement
+          - link "BPC-157 & TB-500 BPC-157 & TB-500 $169 Research Use Only" [ref=e81] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 & TB-500" [ref=e83]
+            - generic [ref=e84]:
+              - heading "BPC-157 & TB-500" [level=3] [ref=e85]
+              - generic [ref=e86]: $169
+            - paragraph [ref=e87]: Research Use Only
+          - link "Retatrutide 40 mg Retatrutide 40 mg $249 Research Use Only" [ref=e88] [cursor=pointer]:
+            - /url: /products/retatrutide-40
+            - img "Retatrutide 40 mg" [ref=e90]
+            - generic [ref=e91]:
+              - heading "Retatrutide 40 mg" [level=3] [ref=e92]
+              - generic [ref=e93]: $249
+            - paragraph [ref=e94]: Research Use Only
+  - contentinfo [ref=e95]:
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - paragraph [ref=e100]: Novera
+          - paragraph [ref=e102]: Research-grade peptides and wellness science — clean, reliable, and precisely made in Dubai.
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: Newsletter
+            - generic [ref=e106]:
+              - generic [ref=e107]: Your email address
+              - textbox "Your email address" [ref=e108]
+              - button "Subscribe" [ref=e109]
+            - paragraph [ref=e110]
+        - generic [ref=e112]:
+          - paragraph [ref=e113]: Explore
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - link "Home" [ref=e116] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e117]:
+              - link "Products" [ref=e118] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=e119]:
+              - link "About" [ref=e120] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=e121]:
+              - link "Why Us" [ref=e122] [cursor=pointer]:
+                - /url: /#why-us
+            - listitem [ref=e123]:
+              - link "Testimonials" [ref=e124] [cursor=pointer]:
+                - /url: /#testimonials
+            - listitem [ref=e125]:
+              - link "Contact" [ref=e126] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=e128]:
+          - paragraph [ref=e129]: Our Range
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Tirzepatide" [ref=e132] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=e133]:
+              - link "Retatrutide" [ref=e134] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=e135]:
+              - link "NAD+" [ref=e136] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=e137]:
+              - link "Glow" [ref=e138] [cursor=pointer]:
+                - /url: /#products
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - paragraph [ref=e141]: Contact
+          - paragraph [ref=e142]:
+            - text: Level 12, Innovation One, Business Bay, Dubai, UAE
+            - link "+971 54 000 0000" [ref=e143] [cursor=pointer]:
+              - /url: https://wa.me/971540000000
+            - text: ·
+            - link "hello@novera.studio" [ref=e144] [cursor=pointer]:
+              - /url: mailto:hello@novera.studio
+        - generic [ref=e145]:
+          - paragraph [ref=e146]: © 2026 Novera. All rights reserved.
+          - paragraph [ref=e147]: Privacy · Terms · Shipping
+      - paragraph [ref=e148]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+  - button "Open Next.js Dev Tools" [ref=e154] [cursor=pointer]

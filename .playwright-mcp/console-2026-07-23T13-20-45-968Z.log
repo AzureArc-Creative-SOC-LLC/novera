@@ -1,0 +1,500 @@
+[ 3166086ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3167377ms] [LOG] [Fast Refresh] done in 1401ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3439948ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3439982ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3440129ms] [LOG] [Fast Refresh] done in 48ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3440253ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3440550ms] [LOG] [Fast Refresh] done in 397ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3440671ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3440818ms] [LOG] [Fast Refresh] done in 253ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441025ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441062ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441349ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441390ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441585ms] [LOG] [Fast Refresh] done in 97ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441696ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3441903ms] [LOG] [Fast Refresh] done in 309ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3442391ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3442426ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3444760ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3444787ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3444908ms] [LOG] [Fast Refresh] done in 76ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445037ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445331ms] [LOG] [Fast Refresh] done in 407ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445456ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445615ms] [LOG] [Fast Refresh] done in 266ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445843ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3445888ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3446004ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3446990ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3447017ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3447649ms] [LOG] [Fast Refresh] done in 51ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3447754ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3449192ms] [LOG] [Fast Refresh] done in 1542ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3449420ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3449650ms] [LOG] [Fast Refresh] done in 331ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3449652ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide?_rsc=aZCCLAb_SdbdWo7h:0
+[ 3449778ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3450075ms] [LOG] [Fast Refresh] done in 401ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3450491ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide?_rsc=aZCCLAb_SdbdWo7h:0
+[ 3450511ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3450661ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3450739ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3450739ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3455012ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3455529ms] [LOG] [Fast Refresh] done in 82ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3455998ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3456044ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3456062ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3456061ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3458375ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3458935ms] [LOG] [Fast Refresh] done in 68ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3459371ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3459408ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3459419ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3459419ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3634743ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3634744ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3634771ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3635358ms] [LOG] [Fast Refresh] done in 27ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3635783ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3635817ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3635830ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3635831ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3646474ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3647061ms] [LOG] [Fast Refresh] done in 25ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3647499ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3647536ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3647546ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3647546ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3648249ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3648707ms] [LOG] [Fast Refresh] done in 23ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3648817ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3648848ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3649192ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3649221ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3649231ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3649232ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3649564ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3650073ms] [LOG] [Fast Refresh] done in 56ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3650178ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3650246ms] [LOG] [Fast Refresh] done in 171ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3650598ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3650634ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3650643ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3650644ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3709942ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3710569ms] [LOG] [Fast Refresh] done in 22ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3710965ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3711000ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3711019ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3711017ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3810781ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3811331ms] [LOG] [Fast Refresh] done in 72ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3811772ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3811808ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3811819ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3811820ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3892606ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3893162ms] [LOG] [Fast Refresh] done in 29ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3893608ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3893639ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3893651ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3893653ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3900938ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3901450ms] [LOG] [Fast Refresh] done in 62ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3901901ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3901930ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3901939ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3901942ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3902129ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3902639ms] [LOG] [Fast Refresh] done in 25ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3902946ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3903579ms] [LOG] [Fast Refresh] done in 29ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3903682ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3903684ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3904020ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3904050ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3904058ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3904059ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3947047ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3947714ms] [LOG] [Fast Refresh] done in 76ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3947830ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3948100ms] [LOG] [Fast Refresh] done in 385ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 3948542ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/products/tirzepatide:0
+[ 3948574ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 3948583ms] TypeError: Cannot read properties of undefined (reading '0')
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\src_097a4-1._.js:420:157)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1593:23)
+    at Context.esmImport [as i] (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:281:20)
+    at module evaluation (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[root-of-the-server]__1a3qwag._.js:291:144)
+    at <unknown> (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1291:27)
+    at runWithHooks (file://C:\Alluvi\my projects\git-update\novera\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1554:9)
+[ 3948586ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 4036051ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 4036366ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 4036493ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 4036523ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 4037262ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4037353ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4037456ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4048714ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4048733ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4104064ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4104229ms] [LOG] [Fast Refresh] done in 65ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4271747ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4271935ms] [LOG] [Fast Refresh] done in 47ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4273120ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4273285ms] [LOG] [Fast Refresh] done in 91ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4273394ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4273416ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4273878ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4274097ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472099ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472121ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472270ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472381ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472467ms] [LOG] [Fast Refresh] done in 190ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472819ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4472837ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4473233ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4473284ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4473440ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4480623ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4480643ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4480756ms] [LOG] [Fast Refresh] done in 63ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4480872ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4481095ms] [LOG] [Fast Refresh] done in 331ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4481394ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4481414ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4481621ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4481676ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484320ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484339ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484471ms] [LOG] [Fast Refresh] done in 67ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484592ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484778ms] [LOG] [Fast Refresh] done in 299ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4484909ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4485174ms] [LOG] [Fast Refresh] done in 375ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4485311ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4485378ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4485505ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4486447ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4486473ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4486642ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4486773ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4486995ms] [LOG] [Fast Refresh] done in 328ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487116ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487147ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487335ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487407ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487546ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487695ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487724ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4487938ms] [LOG] [Fast Refresh] done in 93ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488040ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488116ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488228ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488362ms] [LOG] [Fast Refresh] done in 242ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488631ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488668ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4488744ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489132ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489147ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489270ms] [LOG] [Fast Refresh] done in 29ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489377ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489446ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489789ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489820ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489939ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4489998ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490075ms] [WARNING] Image with src "/images/alluvi-tirzepatide.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490353ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490388ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490564ms] [LOG] [Fast Refresh] done in 109ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490677ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490863ms] [LOG] [Fast Refresh] done in 288ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4490995ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4491081ms] [LOG] [Fast Refresh] done in 189ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4491224ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4491284ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508069ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508097ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508219ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508337ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508478ms] [LOG] [Fast Refresh] done in 251ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508762ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4508913ms] [LOG] [Fast Refresh] done in 252ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4509128ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4509162ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4515987ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4516089ms] [LOG] [Fast Refresh] done in 59ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4516199ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4516217ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4518292ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4518401ms] [LOG] [Fast Refresh] done in 52ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4518526ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4518618ms] [LOG] [Fast Refresh] done in 199ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4520582ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4520669ms] [LOG] [Fast Refresh] done in 57ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4522490ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4522578ms] [LOG] [Fast Refresh] done in 54ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4529498ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4529632ms] [LOG] [Fast Refresh] done in 75ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4536168ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4536256ms] [LOG] [Fast Refresh] done in 48ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4536373ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4536421ms] [LOG] [Fast Refresh] done in 161ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537385ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537470ms] [LOG] [Fast Refresh] done in 43ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537575ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537601ms] [LOG] [Fast Refresh] done in 130ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537705ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4537766ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4539183ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4539262ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4539375ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4539391ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4541464ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4541547ms] [LOG] [Fast Refresh] done in 13ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4541654ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4541689ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4565169ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4565255ms] [LOG] [Fast Refresh] done in 71ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4565359ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4565429ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4571650ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4571759ms] [LOG] [Fast Refresh] done in 50ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4571866ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4571899ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4628084ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4628101ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4887390ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4887707ms] [LOG] [Fast Refresh] done in 419ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4893054ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4893306ms] [LOG] [Fast Refresh] done in 361ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4904219ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4904351ms] [LOG] [Fast Refresh] done in 235ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5053647ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5053695ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5289914ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5290029ms] [LOG] [Fast Refresh] done in 65ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5290133ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5290143ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5290271ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5290323ms] [LOG] [Fast Refresh] done in 158ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477

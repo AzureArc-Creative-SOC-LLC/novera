@@ -1,0 +1,2 @@
+[   74564ms] [ERROR] Access to fetch at 'https://alluvi.bz/product/tirzepatide-40mg' from origin 'https://verify.janoshik.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://verify.janoshik.com/tests/147174-ALLUVI_TIRZEPATIDE_40MG_KIT_T5MBWRAYD4HN:0
+[   74564ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://alluvi.bz/product/tirzepatide-40mg:0

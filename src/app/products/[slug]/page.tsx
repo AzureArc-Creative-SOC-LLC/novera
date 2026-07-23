@@ -11,6 +11,8 @@ import {
 } from "@/lib/data";
 import AddToCart from "@/components/cart/AddToCart";
 import ProductGallery from "@/components/ProductGallery";
+import ProductInfoTabs from "@/components/ProductInfoTabs";
+import CoaViewer from "@/components/CoaViewer";
 import JsonLd from "@/components/JsonLd";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
@@ -135,16 +137,18 @@ export default async function ProductPage({
 
         {/* Detail */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          {/* Left — image gallery */}
-          <ProductGallery images={product.gallery} alt={product.name} />
+          {/* Left — image gallery (sticky on desktop while right column scrolls) */}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <ProductGallery images={product.gallery} alt={product.name} />
+          </div>
 
-          {/* Right — short details */}
+          {/* Right — details */}
           <div className="lg:py-4">
-            <span className="inline-block text-[0.62rem] tracking-[0.2em] uppercase text-muted border border-line rounded-full px-3 py-1">
-              {product.tag}
-            </span>
+            <p className="text-[0.62rem] tracking-[0.2em] uppercase text-muted">
+              {product.tag.toUpperCase()}
+            </p>
 
-            <h1 className="text-section mt-6">{product.name}</h1>
+            <h1 className="text-section mt-4">{product.name}</h1>
 
             <p className="font-serif font-light text-4xl text-olive mt-4">
               {formatPrice(product.price)}
@@ -154,19 +158,126 @@ export default async function ProductPage({
               {product.description}
             </p>
 
-            {/* Strengths */}
-            <div className="mt-8">
-              <p className="eyebrow mb-3">Available Strengths</p>
-              <div className="flex flex-wrap gap-2">
-                {product.strengths.map((s) => (
-                  <span
-                    key={s}
-                    className="text-sm tracking-wide text-dark bg-background-secondary rounded-full px-4 py-2 border border-line"
-                  >
-                    {s}
-                  </span>
-                ))}
+            {/* Prominent research-only notice */}
+            <div className="mt-6 rounded-xl border-2 border-olive/40 bg-olive/5 px-4 py-3 text-sm text-dark max-w-lg">
+              <span className="font-semibold text-olive">
+                FOR RESEARCH PURPOSES ONLY.
+              </span>{" "}
+              Not intended for human or veterinary use. Supplied strictly for
+              laboratory and analytical research conducted by qualified
+              professionals.
+            </div>
+
+            {/* Janoshik report button */}
+            {product.analysis && (
+              <div className="mt-6">
+                <CoaViewer
+                  analysis={product.analysis}
+                  productName={product.name}
+                />
               </div>
+            )}
+
+            {/* Analytical panel */}
+            {product.analysis && (
+              <div className="mt-8 max-w-lg rounded-2xl border border-line bg-background-secondary p-5">
+                <p className="text-center text-sm font-medium text-dark">
+                  Janoshik Third-Party Lab Analysis
+                </p>
+                <p className="text-center text-xs text-muted mt-1">
+                  Independently tested and verified by Janoshik Analytical.
+                </p>
+
+                <div className="mt-5 grid grid-cols-3 gap-3 text-center">
+                  <div>
+                    <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                      Batch Number
+                    </p>
+                    <p className="text-sm text-dark mt-1">
+                      {product.analysis.batchNumber}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                      Fill Volume
+                    </p>
+                    <p className="text-sm text-dark mt-1">
+                      {product.analysis.fillVolume}
+                    </p>
+                  </div>
+                  {product.analysis.purity && (
+                    <div>
+                      <p className="text-[0.6rem] tracking-[0.2em] uppercase text-muted">
+                        Purity
+                      </p>
+                      <p className="text-sm text-dark mt-1">
+                        {product.analysis.purity}
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                <div className="mt-5 overflow-hidden rounded-lg border border-line">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-white/60">
+                      <tr>
+                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                          Compound
+                        </th>
+                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                          Concentration
+                        </th>
+                        <th className="px-3 py-2 text-[0.6rem] tracking-[0.2em] uppercase text-muted font-normal">
+                          Verified Content
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {product.analysis.compounds.map((c) => (
+                        <tr key={c.name} className="border-t border-line">
+                          <td className="px-3 py-2 text-sm text-dark">
+                            {c.name}
+                          </td>
+                          <td className="px-3 py-2 text-sm text-dark">
+                            {c.concentration}
+                          </td>
+                          <td className="px-3 py-2 text-sm text-dark">
+                            {c.content}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <p className="mt-4 text-[0.7rem] leading-relaxed text-muted">
+                  Concentration is measured per mL; verified content reflects
+                  the total assayed mass across the stated fill volume.
+                </p>
+              </div>
+            )}
+
+            {/* Package Contents / Storage Logic / Supply Chain tabs */}
+            <div className="mt-10 max-w-lg">
+              <ProductInfoTabs
+                packageContents={product.packageContents}
+                storageLogic={product.storageLogic}
+                supplyChain={product.supplyChain}
+              />
+            </div>
+
+            {/* Research-only acknowledgement adjacent to Add to Cart */}
+            <div
+              role="note"
+              aria-label="Research-only notice"
+              className="mt-10 max-w-lg rounded-2xl border border-olive/40 bg-olive/5 p-5 text-sm leading-relaxed text-dark"
+            >
+              <p className="text-[0.65rem] tracking-[0.2em] uppercase text-olive font-semibold">
+                Research use only
+              </p>
+              <p className="mt-2">
+                {DISCLAIMER}
+              </p>
             </div>
 
             <AddToCart slug={product.slug} />

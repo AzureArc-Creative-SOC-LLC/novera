@@ -1,0 +1,218 @@
+- generic [ref=f14e1]:
+  - link "Skip to content" [ref=f14e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f14e3]:
+    - navigation "Primary" [ref=f14e5]:
+      - link "Novera — home" [ref=f14e6] [cursor=pointer]:
+        - /url: /
+        - text: Novera
+      - list [ref=f14e7]:
+        - listitem [ref=f14e8]:
+          - link "Home" [ref=f14e9] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f14e10]:
+          - link "Products" [ref=f14e11] [cursor=pointer]:
+            - /url: /#products
+        - listitem [ref=f14e12]:
+          - link "About" [ref=f14e13] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f14e14]:
+          - link "Why Us" [ref=f14e15] [cursor=pointer]:
+            - /url: /#why-us
+        - listitem [ref=f14e16]:
+          - link "Testimonials" [ref=f14e17] [cursor=pointer]:
+            - /url: /#testimonials
+        - listitem [ref=f14e18]:
+          - link "Contact" [ref=f14e19] [cursor=pointer]:
+            - /url: /#contact
+      - generic [ref=f14e20]:
+        - link "Sign in" [ref=f14e21] [cursor=pointer]:
+          - /url: /signin
+        - link "Cart, 0 items" [ref=f14e22] [cursor=pointer]:
+          - /url: /cart
+  - main [ref=f14e28]:
+    - generic [ref=f14e29]:
+      - navigation "Breadcrumb" [ref=f14e30]:
+        - list [ref=f14e31]:
+          - listitem [ref=f14e32]:
+            - link "Home" [ref=f14e33] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f14e34]: /
+          - listitem [ref=f14e35]:
+            - link "Products" [ref=f14e36] [cursor=pointer]:
+              - /url: /#products
+          - listitem [ref=f14e37]: /
+          - listitem [ref=f14e38]: Tirzepatide 40 mg (R&D Only)
+      - generic [ref=f14e39]:
+        - generic [ref=f14e40]:
+          - img "Tirzepatide 40 mg (R&D Only)" [ref=f14e42]
+          - generic [ref=f14e43]:
+            - button "View image 1" [ref=f14e44]
+            - button "View image 2" [ref=f14e45]
+            - button "View image 3" [ref=f14e46]
+            - button "View image 4" [ref=f14e47]
+        - generic [ref=f14e48]:
+          - paragraph [ref=f14e49]: COMPOUND ANALYSIS
+          - heading "Tirzepatide 40 mg (R&D Only)" [level=1] [ref=f14e50]
+          - paragraph [ref=f14e51]: $189
+          - paragraph [ref=f14e52]: A 40 mg Tirzepatide formulation supplied in a pre-filled research device, provided exclusively for controlled laboratory R&D applications. Delivered in sealed format to support compound stability analysis, formulation studies, and delivery mechanism evaluation.
+          - generic [ref=f14e53]: "Safety Protocol: Produced for laboratory research only. Not for human or veterinary consumption."
+          - generic [ref=f14e54]:
+            - button "View Janoshik Analytical Report" [active] [ref=f14e55]
+            - dialog "Tirzepatide 40 mg (R&D Only) — Janoshik Analytical Report" [ref=f14e206]:
+              - generic [ref=f14e207]:
+                - generic [ref=f14e208]:
+                  - generic [ref=f14e209]:
+                    - paragraph [ref=f14e210]: Janoshik Third-Party Lab Analysis
+                    - paragraph [ref=f14e211]: Tirzepatide 40 mg (R&D Only)
+                  - generic [ref=f14e212]:
+                    - link "Download" [ref=f14e213] [cursor=pointer]:
+                      - /url: /images/coa/tirzepatide.png
+                    - button "Close report" [ref=f14e214]
+                - img "Tirzepatide 40 mg (R&D Only) Janoshik Analytical Report" [ref=f14e218]
+          - generic [ref=f14e59]:
+            - paragraph [ref=f14e60]: Janoshik Third-Party Lab Analysis
+            - paragraph [ref=f14e61]: Independently tested and verified by Janoshik Analytical.
+            - generic [ref=f14e62]:
+              - generic [ref=f14e63]:
+                - paragraph [ref=f14e64]: Batch Number
+                - paragraph [ref=f14e65]: TR786PAOS
+              - generic [ref=f14e66]:
+                - paragraph [ref=f14e67]: Fill Volume
+                - paragraph [ref=f14e68]: 3 mL
+              - generic [ref=f14e69]:
+                - paragraph [ref=f14e70]: Purity
+                - paragraph [ref=f14e71]: 99.85%
+            - table [ref=f14e73]:
+              - rowgroup [ref=f14e74]:
+                - row [ref=f14e75]:
+                  - columnheader "Compound" [ref=f14e76]
+                  - columnheader "Concentration" [ref=f14e77]
+                  - columnheader "Verified Content" [ref=f14e78]
+              - rowgroup [ref=f14e79]:
+                - row [ref=f14e80]:
+                  - cell "Tirzepatide" [ref=f14e81]
+                  - cell "13.35 mg/mL" [ref=f14e82]
+                  - cell "40.05 mg" [ref=f14e83]
+            - paragraph [ref=f14e84]: Concentration is measured per mL; verified content reflects the total assayed mass across the stated fill volume.
+          - generic [ref=f14e86]:
+            - tablist [ref=f14e87]:
+              - tab "Package Contents" [selected] [ref=f14e88]
+              - tab "Storage Logic" [ref=f14e89]
+              - tab "Supply Chain" [ref=f14e90]
+            - list [ref=f14e91]:
+              - listitem [ref=f14e92]: Pre-filled Research pen (40 mg Tirzepatide)
+              - listitem [ref=f14e93]: Research information sheet
+          - generic [ref=f14e95]:
+            - generic [ref=f14e96]:
+              - button "Decrease quantity" [ref=f14e97]: −
+              - generic [ref=f14e98]: "1"
+              - button "Increase quantity" [ref=f14e99]: +
+            - button "Add to Cart" [ref=f14e100]
+          - paragraph [ref=f14e101]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+      - generic [ref=f14e102]:
+        - generic [ref=f14e103]:
+          - heading "Related products" [level=2] [ref=f14e104]
+          - link "View all →" [ref=f14e105] [cursor=pointer]:
+            - /url: /#products
+        - generic [ref=f14e106]:
+          - link "Retatrutide 20 mg (R&D Only) Retatrutide 20 mg (R&D Only) $149 Compound Analysis" [ref=f14e107] [cursor=pointer]:
+            - /url: /products/retatrutide
+            - img "Retatrutide 20 mg (R&D Only)" [ref=f14e109]
+            - generic [ref=f14e110]:
+              - heading "Retatrutide 20 mg (R&D Only)" [level=3] [ref=f14e111]
+              - generic [ref=f14e112]: $149
+            - paragraph [ref=f14e113]: Compound Analysis
+          - link "NAD+ 1,000 mg NAD+ 1,000 mg $149 Support" [ref=f14e114] [cursor=pointer]:
+            - /url: /products/nad
+            - img "NAD+ 1,000 mg" [ref=f14e116]
+            - generic [ref=f14e117]:
+              - heading "NAD+ 1,000 mg" [level=3] [ref=f14e118]
+              - generic [ref=f14e119]: $149
+            - paragraph [ref=f14e120]: Support
+          - link "Glow 70 mg (R&D Only) Glow 70 mg (R&D Only) $129 Compound Analysis" [ref=f14e121] [cursor=pointer]:
+            - /url: /products/glow
+            - img "Glow 70 mg (R&D Only)" [ref=f14e123]
+            - generic [ref=f14e124]:
+              - heading "Glow 70 mg (R&D Only)" [level=3] [ref=f14e125]
+              - generic [ref=f14e126]: $129
+            - paragraph [ref=f14e127]: Compound Analysis
+          - link "BPC-157 & TB-500 40 mg (R&D Only) BPC-157 & TB-500 40 mg (R&D Only) $169 Compound Analysis" [ref=f14e128] [cursor=pointer]:
+            - /url: /products/bpc-157-tb-500
+            - img "BPC-157 & TB-500 40 mg (R&D Only)" [ref=f14e130]
+            - generic [ref=f14e131]:
+              - heading "BPC-157 & TB-500 40 mg (R&D Only)" [level=3] [ref=f14e132]
+              - generic [ref=f14e133]: $169
+            - paragraph [ref=f14e134]: Compound Analysis
+          - link "Retatrutide 40 mg (R&D Only) Retatrutide 40 mg (R&D Only) $249 Compound Analysis" [ref=f14e135] [cursor=pointer]:
+            - /url: /products/retatrutide-40
+            - img "Retatrutide 40 mg (R&D Only)" [ref=f14e137]
+            - generic [ref=f14e138]:
+              - heading "Retatrutide 40 mg (R&D Only)" [level=3] [ref=f14e139]
+              - generic [ref=f14e140]: $249
+            - paragraph [ref=f14e141]: Compound Analysis
+  - contentinfo [ref=f14e142]:
+    - generic [ref=f14e143]:
+      - generic [ref=f14e144]:
+        - generic [ref=f14e145]:
+          - paragraph [ref=f14e147]: Novera
+          - paragraph [ref=f14e149]: Research-grade peptides and wellness science — clean, reliable, and precisely made in Dubai.
+          - generic [ref=f14e151]:
+            - paragraph [ref=f14e152]: Newsletter
+            - generic [ref=f14e153]:
+              - generic [ref=f14e154]: Your email address
+              - textbox "Your email address" [ref=f14e155]
+              - button "Subscribe" [ref=f14e156]
+            - paragraph [ref=f14e157]
+        - generic [ref=f14e159]:
+          - paragraph [ref=f14e160]: Explore
+          - list [ref=f14e161]:
+            - listitem [ref=f14e162]:
+              - link "Home" [ref=f14e163] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f14e164]:
+              - link "Products" [ref=f14e165] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f14e166]:
+              - link "About" [ref=f14e167] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f14e168]:
+              - link "Why Us" [ref=f14e169] [cursor=pointer]:
+                - /url: /#why-us
+            - listitem [ref=f14e170]:
+              - link "Testimonials" [ref=f14e171] [cursor=pointer]:
+                - /url: /#testimonials
+            - listitem [ref=f14e172]:
+              - link "Contact" [ref=f14e173] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=f14e175]:
+          - paragraph [ref=f14e176]: Our Range
+          - list [ref=f14e177]:
+            - listitem [ref=f14e178]:
+              - link "Tirzepatide" [ref=f14e179] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f14e180]:
+              - link "Retatrutide" [ref=f14e181] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f14e182]:
+              - link "NAD+" [ref=f14e183] [cursor=pointer]:
+                - /url: /#products
+            - listitem [ref=f14e184]:
+              - link "Glow" [ref=f14e185] [cursor=pointer]:
+                - /url: /#products
+      - generic [ref=f14e186]:
+        - generic [ref=f14e187]:
+          - paragraph [ref=f14e188]: Contact
+          - paragraph [ref=f14e189]:
+            - text: Level 12, Innovation One, Business Bay, Dubai, UAE
+            - link "+971 54 000 0000" [ref=f14e190] [cursor=pointer]:
+              - /url: https://wa.me/971540000000
+            - text: ·
+            - link "hello@novera.studio" [ref=f14e191] [cursor=pointer]:
+              - /url: mailto:hello@novera.studio
+        - generic [ref=f14e192]:
+          - paragraph [ref=f14e193]: © 2026 Novera. All rights reserved.
+          - paragraph [ref=f14e194]: Privacy · Terms · Shipping
+      - paragraph [ref=f14e195]: Research compounds are intended strictly for laboratory and research use only — not for human consumption. Supplement products are not intended to diagnose, treat, cure, or prevent any disease.
+  - button "Open Next.js Dev Tools" [ref=f14e201] [cursor=pointer]
+  - alert [ref=f14e205]

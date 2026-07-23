@@ -153,13 +153,13 @@ export default function SignInPage() {
                 Purity, verified — batch by batch, molecule by molecule.
               </h2>
               <p className="mt-6 text-background/80 text-sm leading-relaxed max-w-md">
-                Sign in to access your order history, download COAs, and manage
-                secure recurring shipments.
+                Sign in to access your order history, download certificates of
+                analysis, and manage your research supply account.
               </p>
             </div>
 
             <p className="text-[0.62rem] uppercase tracking-[0.3em] text-background/60">
-              For laboratory R&amp;D use only
+              For research purposes only  not for human or veterinary use
             </p>
           </div>
         </aside>
